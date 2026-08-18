@@ -1,0 +1,139 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - generic [ref=f3e3]: Envíos a todo el mundo — piezas hechas a mano en México
+    - banner [ref=f3e4]:
+      - link [ref=f3e5] [cursor=pointer]:
+        - /url: /
+        - paragraph [ref=f3e6]: BOUTIQUE MEX
+        - paragraph [ref=f3e7]: MÉXICO A MANO
+      - generic [ref=f3e8]:
+        - link "Cuenta" [ref=f3e9] [cursor=pointer]:
+          - /url: /login
+        - link "Favoritos" [ref=f3e13] [cursor=pointer]:
+          - /url: /cuenta/favoritos
+        - link "Bolsa" [ref=f3e16] [cursor=pointer]:
+          - /url: /carrito
+    - link [ref=f3e21] [cursor=pointer]:
+      - /url: /categoria/vestidos
+      - img "La belleza de la tradición, reinventada" [ref=f3e22]
+      - generic [ref=f3e23]:
+        - heading "La belleza de la tradición, reinventada" [level=1] [ref=f3e24]
+        - button "Comprar" [ref=f3e25]
+    - generic [ref=f3e26]:
+      - generic [ref=f3e27]:
+        - heading "Colecciones destacadas" [level=2] [ref=f3e28]
+        - paragraph [ref=f3e29]: Cada prenda está bordada a mano, haciendo cada pieza única.
+      - generic [ref=f3e30]:
+        - link [ref=f3e31] [cursor=pointer]:
+          - /url: /categoria/accesorios
+          - img "Accesorios" [ref=f3e33]
+          - paragraph [ref=f3e34]: Accesorios
+        - link [ref=f3e35] [cursor=pointer]:
+          - /url: /categoria/blusas
+          - img "Blusas" [ref=f3e37]
+          - paragraph [ref=f3e38]: Blusas
+        - link [ref=f3e39] [cursor=pointer]:
+          - /url: /categoria/huipiles
+          - img "Huipiles" [ref=f3e41]
+          - paragraph [ref=f3e42]: Huipiles
+        - link [ref=f3e43] [cursor=pointer]:
+          - /url: /categoria/vestidos
+          - img "Vestidos" [ref=f3e45]
+          - paragraph [ref=f3e46]: Vestidos
+    - generic [ref=f3e47]:
+      - heading "Tendencia" [level=2] [ref=f3e49]
+      - generic [ref=f3e50]:
+        - link [ref=f3e51] [cursor=pointer]:
+          - /url: /producto/rebozo-bordado-a-mano
+          - img "Rebozo bordado a mano" [ref=f3e53]
+          - generic [ref=f3e54]:
+            - paragraph [ref=f3e55]: Rebozo bordado a mano
+            - paragraph [ref=f3e56]: $1,800.00
+        - link [ref=f3e57] [cursor=pointer]:
+          - /url: /producto/huipil-tradicional-bordado
+          - img "Huipil tradicional bordado" [ref=f3e59]
+          - generic [ref=f3e60]:
+            - paragraph [ref=f3e61]: Huipil tradicional bordado
+            - paragraph [ref=f3e62]: $3,950.00
+        - link [ref=f3e63] [cursor=pointer]:
+          - /url: /producto/vestido-carlota-fucsia
+          - img "Vestido Carlota fucsia" [ref=f3e65]
+          - generic [ref=f3e66]:
+            - paragraph [ref=f3e67]: Vestido Carlota fucsia
+            - paragraph [ref=f3e68]: $4,200.00
+        - link [ref=f3e69] [cursor=pointer]:
+          - /url: /producto/blusa-lino-blanco
+          - img "Blusa de lino blanco" [ref=f3e71]
+          - generic [ref=f3e72]:
+            - paragraph [ref=f3e73]: Blusa de lino blanco
+            - paragraph [ref=f3e74]: $2,950.00
+    - generic [ref=f3e75]:
+      - img "Detalle de bordado" [ref=f3e77]
+      - generic [ref=f3e78]:
+        - img "Donde la tradición se une al estilo contemporáneo" [ref=f3e79]
+        - generic [ref=f3e80]:
+          - paragraph [ref=f3e81]: Donde la tradición se une al estilo contemporáneo
+          - link "Ver colección" [ref=f3e82] [cursor=pointer]:
+            - /url: /categoria/vestidos
+      - img "Detalle de bordado" [ref=f3e84]
+    - generic [ref=f3e85]:
+      - generic [ref=f3e86]:
+        - heading "Tendencias" [level=2] [ref=f3e87]
+        - paragraph [ref=f3e88]: Nuestros diseños celebran la belleza del bordado.
+      - generic [ref=f3e89]:
+        - link [ref=f3e90] [cursor=pointer]:
+          - /url: /producto/tunica-lino-rosa-palo
+          - img "Tunica de lino rosa palo" [ref=f3e92]
+          - generic [ref=f3e93]:
+            - paragraph [ref=f3e94]: Tunica de lino rosa palo
+            - paragraph [ref=f3e95]: $5,100.00
+        - link [ref=f3e96] [cursor=pointer]:
+          - /url: /producto/vestido-negro-carmen
+          - img "Vestido negro Carmen" [ref=f3e98]
+          - generic [ref=f3e99]:
+            - paragraph [ref=f3e100]: Vestido negro Carmen
+            - paragraph [ref=f3e101]: $5,100.00
+    - generic [ref=f3e102]:
+      - generic [ref=f3e103]:
+        - paragraph [ref=f3e109]: Envíos a todo el mundo
+        - paragraph [ref=f3e110]: Directo a tu puerta, en cualquier parte.
+      - generic [ref=f3e111]:
+        - paragraph [ref=f3e116]: Mayoreo
+        - paragraph [ref=f3e117]: Soporte de mayoreo listo para ayudarte.
+      - generic [ref=f3e118]:
+        - paragraph [ref=f3e121]: WhatsApp
+        - paragraph [ref=f3e122]: Contáctanos para más información.
+    - contentinfo [ref=f3e123]:
+      - generic [ref=f3e124]:
+        - generic [ref=f3e125]:
+          - paragraph [ref=f3e126]: BOUTIQUE MEX
+          - paragraph [ref=f3e127]: MÉXICO A MANO
+          - paragraph [ref=f3e128]: +52 981 171 7898
+          - paragraph [ref=f3e129]: hola@boutiquemex.mx
+        - generic [ref=f3e130]:
+          - paragraph [ref=f3e131]: Tienda
+          - link "Vestidos" [ref=f3e132] [cursor=pointer]:
+            - /url: /categoria/vestidos
+          - link "Blusas" [ref=f3e133] [cursor=pointer]:
+            - /url: /categoria/blusas
+          - link "Huipiles" [ref=f3e134] [cursor=pointer]:
+            - /url: /categoria/huipiles
+          - link "Accesorios" [ref=f3e135] [cursor=pointer]:
+            - /url: /categoria/accesorios
+        - generic [ref=f3e136]:
+          - paragraph [ref=f3e137]: Legal
+          - link "Aviso de privacidad" [ref=f3e138] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f3e139] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=f3e140]:
+        - paragraph [ref=f3e141]: © 2026 Boutique Mex.
+        - link "Desarrollado por TTM Agencia" [ref=f3e142] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f3e143] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f3e144] [cursor=pointer]:
+    - /url: https://wa.me/525500000000
+    - generic [ref=f3e145]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f3e154] [cursor=pointer]

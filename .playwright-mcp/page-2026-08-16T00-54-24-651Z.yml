@@ -1,0 +1,55 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - generic [ref=f5e3]: Envíos a todo el mundo — piezas hechas a mano en México
+    - banner [ref=f5e4]:
+      - link [ref=f5e5] [cursor=pointer]:
+        - /url: /
+        - paragraph [ref=f5e6]: BOUTIQUE MEX
+        - paragraph [ref=f5e7]: MÉXICO A MANO
+      - generic [ref=f5e8]:
+        - link "Cuenta" [ref=f5e9] [cursor=pointer]:
+          - /url: /login
+        - link "Favoritos" [ref=f5e13] [cursor=pointer]:
+          - /url: /cuenta/favoritos
+        - link "Bolsa" [ref=f5e16] [cursor=pointer]:
+          - /url: /carrito
+    - generic [ref=f5e20]:
+      - heading "Carrito" [level=1] [ref=f5e21]
+      - generic [ref=f5e22]:
+        - paragraph [ref=f5e23]: Tu carrito está vacío.
+        - link "Seguir comprando" [ref=f5e24] [cursor=pointer]:
+          - /url: /
+    - contentinfo [ref=f5e25]:
+      - generic [ref=f5e26]:
+        - generic [ref=f5e27]:
+          - paragraph [ref=f5e28]: BOUTIQUE MEX
+          - paragraph [ref=f5e29]: MÉXICO A MANO
+          - paragraph [ref=f5e30]: +52 981 171 7898
+          - paragraph [ref=f5e31]: hola@boutiquemex.mx
+        - generic [ref=f5e32]:
+          - paragraph [ref=f5e33]: Tienda
+          - link "Vestidos" [ref=f5e34] [cursor=pointer]:
+            - /url: /categoria/vestidos
+          - link "Blusas" [ref=f5e35] [cursor=pointer]:
+            - /url: /categoria/blusas
+          - link "Huipiles" [ref=f5e36] [cursor=pointer]:
+            - /url: /categoria/huipiles
+          - link "Accesorios" [ref=f5e37] [cursor=pointer]:
+            - /url: /categoria/accesorios
+        - generic [ref=f5e38]:
+          - paragraph [ref=f5e39]: Legal
+          - link "Aviso de privacidad" [ref=f5e40] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f5e41] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=f5e42]:
+        - paragraph [ref=f5e43]: © 2026 Boutique Mex.
+        - link "Desarrollado por TTM Agencia" [ref=f5e44] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f5e45] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f5e46] [cursor=pointer]:
+    - /url: https://wa.me/525500000000
+    - generic [ref=f5e47]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f5e56] [cursor=pointer]

@@ -1,0 +1,72 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - generic [ref=f4e3]: Envíos a todo el mundo — piezas hechas a mano en México
+    - banner [ref=f4e4]:
+      - link [ref=f4e5] [cursor=pointer]:
+        - /url: /
+        - paragraph [ref=f4e6]: BOUTIQUE MEX
+        - paragraph [ref=f4e7]: MÉXICO A MANO
+      - generic [ref=f4e8]:
+        - link "Cuenta" [ref=f4e9] [cursor=pointer]:
+          - /url: /login
+        - link "Favoritos" [ref=f4e13] [cursor=pointer]:
+          - /url: /cuenta/favoritos
+        - link "Bolsa" [ref=f4e16] [cursor=pointer]:
+          - /url: /carrito
+    - generic [ref=f4e20]:
+      - generic [ref=f4e21]:
+        - heading "Vestidos" [level=1] [ref=f4e22]
+        - paragraph [ref=f4e23]: 3 productos
+      - generic [ref=f4e24]:
+        - link [ref=f4e25] [cursor=pointer]:
+          - /url: /producto/vestido-carlota-fucsia
+          - img "Vestido Carlota fucsia" [ref=f4e27]
+          - generic [ref=f4e28]:
+            - paragraph [ref=f4e29]: Vestido Carlota fucsia
+            - paragraph [ref=f4e30]: $4,200.00
+        - link [ref=f4e31] [cursor=pointer]:
+          - /url: /producto/tunica-lino-rosa-palo
+          - img "Tunica de lino rosa palo" [ref=f4e33]
+          - generic [ref=f4e34]:
+            - paragraph [ref=f4e35]: Tunica de lino rosa palo
+            - paragraph [ref=f4e36]: $5,100.00
+        - link [ref=f4e37] [cursor=pointer]:
+          - /url: /producto/vestido-negro-carmen
+          - img "Vestido negro Carmen" [ref=f4e39]
+          - generic [ref=f4e40]:
+            - paragraph [ref=f4e41]: Vestido negro Carmen
+            - paragraph [ref=f4e42]: $5,100.00
+    - contentinfo [ref=f4e43]:
+      - generic [ref=f4e44]:
+        - generic [ref=f4e45]:
+          - paragraph [ref=f4e46]: BOUTIQUE MEX
+          - paragraph [ref=f4e47]: MÉXICO A MANO
+          - paragraph [ref=f4e48]: +52 981 171 7898
+          - paragraph [ref=f4e49]: hola@boutiquemex.mx
+        - generic [ref=f4e50]:
+          - paragraph [ref=f4e51]: Tienda
+          - link "Vestidos" [ref=f4e52] [cursor=pointer]:
+            - /url: /categoria/vestidos
+          - link "Blusas" [ref=f4e53] [cursor=pointer]:
+            - /url: /categoria/blusas
+          - link "Huipiles" [ref=f4e54] [cursor=pointer]:
+            - /url: /categoria/huipiles
+          - link "Accesorios" [ref=f4e55] [cursor=pointer]:
+            - /url: /categoria/accesorios
+        - generic [ref=f4e56]:
+          - paragraph [ref=f4e57]: Legal
+          - link "Aviso de privacidad" [ref=f4e58] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f4e59] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=f4e60]:
+        - paragraph [ref=f4e61]: © 2026 Boutique Mex.
+        - link "Desarrollado por TTM Agencia" [ref=f4e62] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f4e63] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f4e64] [cursor=pointer]:
+    - /url: https://wa.me/525500000000
+    - generic [ref=f4e65]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f4e74] [cursor=pointer]
