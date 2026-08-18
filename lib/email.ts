@@ -16,9 +16,9 @@ export async function sendNewOrderEmail(order: {
 
   try {
     await resend.emails.send({
-      from: process.env.EMAIL_FROM ?? "Boutique Mex <pedidos@boutiquemex.mx>",
+      from: process.env.EMAIL_FROM ?? "Bahia 105w <pedidos@boutiquemex.mx>",
       to: process.env.VENDOR_EMAIL,
-      subject: `Nuevo pedido #${order.id.slice(-8)} — Boutique Mex`,
+      subject: `Nuevo pedido #${order.id.slice(-8)} — Bahia 105w`,
       html: `
         <h2>Nuevo pedido recibido</h2>
         <p><strong>Cliente:</strong> ${order.contactName}</p>

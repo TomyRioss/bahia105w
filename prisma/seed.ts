@@ -120,7 +120,7 @@ async function main() {
     where: { email: "admin@boutiquemex.mx" },
     update: {},
     create: {
-      name: "Admin Boutique Mex",
+      name: "Admin Bahia 105w",
       email: "admin@boutiquemex.mx",
       password: adminPassword,
       role: "ADMIN",

@@ -23,7 +23,7 @@ export function HeroSlider({ slides }: { slides: Slide[] }) {
     <>
       <Image
         src={slide.imageUrl}
-        alt={slide.title ?? "Boutique Mex"}
+        alt={slide.title ?? "Bahia 105w"}
         fill
         priority
         className="object-cover"

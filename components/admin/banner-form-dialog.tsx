@@ -24,7 +24,7 @@ const TYPE_LABEL: Record<Banner["type"], string> = {
   BANNER: "Banner",
 };
 
-export function BannerFormDialog({ banner, trigger }: { banner?: Banner; trigger: React.ReactNode }) {
+export function BannerFormDialog({ banner, trigger }: { banner?: Banner; trigger: React.ReactElement }) {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [type, setType] = useState<Banner["type"]>(banner?.type ?? "HERO");

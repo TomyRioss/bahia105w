@@ -19,7 +19,7 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Boutique Mex — La belleza de la tradición, reinventada",
+  title: "Bahia 105w — La belleza de la tradición, reinventada",
   description: "Bordados hechos a mano, inspirados en el arte mexicano.",
 };
 

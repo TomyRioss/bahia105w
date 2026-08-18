@@ -15,7 +15,7 @@ export function CategoryFormDialog({
   trigger,
 }: {
   category?: Category;
-  trigger: React.ReactNode;
+  trigger: React.ReactElement;
 }) {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);

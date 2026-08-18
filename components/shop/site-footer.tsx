@@ -24,7 +24,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 items-center gap-3 border-t border-cream/20 pt-6 text-xs text-cream/70 sm:grid-cols-3">
-        <p className="text-center sm:text-left">© 2026 Boutique Mex.</p>
+        <p className="text-center sm:text-left">© 2026 Bahia 105w.</p>
         <a
           href="https://ttmagencia.com/"
           target="_blank"

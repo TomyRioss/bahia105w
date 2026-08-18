@@ -1,4 +1,4 @@
-# Boutique Mex
+# Bahia 105w
 
 Ecommerce boutique con panel de administración. Bordados hechos a mano, inspirados en el arte mexicano.
 
