@@ -13,6 +13,7 @@
 - Metodología MVC, componentes modulares.
 - Ningún componente mayor a 500 líneas — modularizar si se acerca al límite.
 - Para problemas desconocidos, buscar en internet (Stack Overflow, Reddit, docs oficiales) antes de improvisar.
+- Tipografía fija del sitio: `Public Sans` (`--font-sans`, `font-sans`) para body/texto general, `EB Garamond` (`--font-serif`, `font-serif`) para títulos/headings (h1/h2). Definidas en `app/layout.tsx`. Nunca introducir otra fuente ni fuentes inline.
 
 # Skills por tarea
 

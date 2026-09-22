@@ -1,0 +1,144 @@
+- generic [active] [ref=f7e1]:
+  - generic [ref=f7e2]:
+    - generic [ref=f7e3]:
+      - generic [ref=f7e4]: Envíos a todo México — piezas hechas a mano
+      - banner [ref=f7e5]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: /
+          - img "Bahia 105W" [ref=f7e7]
+        - navigation [ref=f7e8]:
+          - link "Inicio" [ref=f7e9] [cursor=pointer]:
+            - /url: /
+          - link "Tienda" [ref=f7e10] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Nosotros" [ref=f7e11] [cursor=pointer]:
+            - /url: /nosotros
+          - link "Contacto" [ref=f7e12] [cursor=pointer]:
+            - /url: /contacto
+          - link "Cómo Comprar" [ref=f7e13] [cursor=pointer]:
+            - /url: /como-comprar
+        - generic [ref=f7e14]:
+          - searchbox "Buscar..." [ref=f7e16]
+          - button "Cuenta" [ref=f7e17]:
+            - generic [ref=f7e21]: Dev Admin
+          - link "Favoritos" [ref=f7e22] [cursor=pointer]:
+            - /url: /cuenta/favoritos
+          - button "Bolsa" [ref=f7e25]
+    - main [ref=f7e29]:
+      - generic [ref=f7e33]:
+        - heading "La belleza de la tradición, reinventada" [level=1] [ref=f7e34]
+        - paragraph [ref=f7e35]: Bordado artesanal, una pieza a la vez.
+        - link "Ver colección" [ref=f7e36] [cursor=pointer]:
+          - /url: /tienda/vestidos
+      - generic [ref=f7e37]:
+        - generic [ref=f7e38]:
+          - heading "Colecciones destacadas" [level=2] [ref=f7e39]
+          - paragraph [ref=f7e40]: Cada prenda está bordada a mano, haciendo cada pieza única.
+        - generic [ref=f7e41]:
+          - button "Anterior" [ref=f7e42]
+          - button "Siguiente" [ref=f7e45]
+          - generic [ref=f7e49]:
+            - link [ref=f7e50] [cursor=pointer]:
+              - /url: /producto/test-color-talla
+              - generic [ref=f7e52]:
+                - paragraph [ref=f7e53]: $2.500,0 MXN
+                - paragraph [ref=f7e54]: TEST Color Talla
+            - link [ref=f7e55] [cursor=pointer]:
+              - /url: /producto/test-color
+              - generic [ref=f7e57]:
+                - paragraph [ref=f7e58]: $2.000,0 MXN
+                - paragraph [ref=f7e59]: TEST Color
+            - link [ref=f7e60] [cursor=pointer]:
+              - /url: /producto/test-sin-variante
+              - generic [ref=f7e62]:
+                - paragraph [ref=f7e63]: $1.500,0 MXN
+                - paragraph [ref=f7e64]: TEST Sin Variante
+            - link [ref=f7e65] [cursor=pointer]:
+              - /url: /producto/vestido-tela-sintetica
+              - img "Vestido Tela Sintética" [ref=f7e67]
+              - generic [ref=f7e68]:
+                - paragraph [ref=f7e69]: $8.000,0 MXN
+                - paragraph [ref=f7e70]: Vestido Tela Sintética
+      - generic [ref=f7e71]:
+        - heading "Categorías" [level=2] [ref=f7e73]
+        - generic [ref=f7e74]:
+          - link [ref=f7e75] [cursor=pointer]:
+            - /url: /tienda/accesorios
+            - paragraph [ref=f7e77]: Accesorios
+          - link [ref=f7e78] [cursor=pointer]:
+            - /url: /tienda/blusas
+            - paragraph [ref=f7e80]: Blusas
+          - link [ref=f7e81] [cursor=pointer]:
+            - /url: /tienda/huipiles
+            - paragraph [ref=f7e83]: Huipiles
+          - link [ref=f7e84] [cursor=pointer]:
+            - /url: /tienda/vestidos
+            - img "Vestidos" [ref=f7e86]
+            - paragraph [ref=f7e87]: Vestidos
+      - generic [ref=f7e88]:
+        - img "Detalle de bordado" [ref=f7e90]
+        - generic [ref=f7e91]:
+          - img "Donde la tradición se une al estilo contemporáneo" [ref=f7e92]
+          - generic [ref=f7e93]:
+            - paragraph [ref=f7e94]: Donde la tradición se une al estilo contemporáneo
+            - link "Ver colección" [ref=f7e95] [cursor=pointer]:
+              - /url: /tienda/vestidos
+        - img "Detalle de bordado" [ref=f7e97]
+      - generic [ref=f7e98]:
+        - generic [ref=f7e99]:
+          - heading "¿Quiénes somos?" [level=2] [ref=f7e100]
+          - paragraph [ref=f7e101]: Somos Bahía 105W, un espacio dedicado a piezas hechas a mano. Diseño por artesanos de México y el Mundo, celebrando la tradición y el trabajo manual detrás de cada diseño.
+        - generic [ref=f7e102]:
+          - link "+52 1 322 294 2660" [ref=f7e103] [cursor=pointer]:
+            - /url: https://wa.me/5213222942660
+          - link "Instagram" [ref=f7e106] [cursor=pointer]:
+            - /url: https://www.instagram.com/bahia_105w?igsi=NjAxYWFiNGt3emMy
+          - link "Facebook" [ref=f7e109] [cursor=pointer]:
+            - /url: https://www.facebook.com/share/196VwdM7LU/
+      - generic [ref=f7e112]:
+        - generic [ref=f7e113]:
+          - paragraph [ref=f7e119]: Envíos a todo México
+          - paragraph [ref=f7e120]: Directo a tu puerta, en cualquier parte del país.
+        - generic [ref=f7e121]:
+          - paragraph [ref=f7e124]: WhatsApp
+          - paragraph [ref=f7e125]: Contáctanos para más información.
+    - contentinfo [ref=f7e126]:
+      - generic [ref=f7e127]:
+        - generic [ref=f7e128]:
+          - img "Bahia 105W" [ref=f7e129]
+          - paragraph [ref=f7e130]: +52 981 171 7898
+          - paragraph [ref=f7e131]: hola@boutiquemex.mx
+        - generic [ref=f7e132]:
+          - paragraph [ref=f7e133]: Tienda
+          - link "Vestidos" [ref=f7e134] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Blusas" [ref=f7e135] [cursor=pointer]:
+            - /url: /tienda/blusas
+          - link "Huipiles" [ref=f7e136] [cursor=pointer]:
+            - /url: /tienda/huipiles
+          - link "Accesorios" [ref=f7e137] [cursor=pointer]:
+            - /url: /tienda/accesorios
+        - generic [ref=f7e138]:
+          - paragraph [ref=f7e139]: Legal
+          - link "Aviso de privacidad" [ref=f7e140] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f7e141] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f7e142]:
+          - paragraph [ref=f7e143]: Ubícanos
+          - paragraph [ref=f7e144]: Lázaro Cárdenas 93, Zona Dorada
+          - paragraph [ref=f7e145]: "Horario: Lunes-Sábado 10am-6pm"
+          - iframe [ref=f7e146]:
+            
+      - generic [ref=f7e147]:
+        - paragraph [ref=f7e148]: © 2026 Bahia 105w.
+        - link "Desarrollado por TTM Agencia" [ref=f7e149] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f7e150] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f7e151] [cursor=pointer]:
+    - /url: https://wa.me/5213222942660
+    - generic [ref=f7e152]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f7e161] [cursor=pointer]
+  - alert [ref=f7e165]

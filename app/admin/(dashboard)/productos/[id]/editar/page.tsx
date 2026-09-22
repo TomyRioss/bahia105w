@@ -21,6 +21,7 @@ export default async function EditProductPage({ params }: { params: Promise<{ id
           slug: product.slug,
           description: product.description,
           price: product.price.toString(),
+          shippingPrice: product.shippingPrice?.toString() ?? null,
           categoryId: product.categoryId,
           images: product.images,
           variants: product.variants.map((v) => ({
@@ -28,6 +29,7 @@ export default async function EditProductPage({ params }: { params: Promise<{ id
             color: v.color,
             size: v.size,
             stock: v.stock,
+            price: v.price?.toString() ?? "",
             imageUrl: v.imageUrl ?? "",
             images: v.images,
             description: v.description ?? "",

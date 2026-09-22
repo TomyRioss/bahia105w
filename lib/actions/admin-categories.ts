@@ -10,14 +10,14 @@ export async function saveCategory(input: unknown) {
   const parsed = categorySchema.safeParse(input);
   if (!parsed.success) return { error: parsed.error.issues[0].message };
 
-  const { name, slug } = parsed.data;
+  const { name, slug, image } = parsed.data;
   const id = (input as { id?: string }).id;
 
   try {
     if (id) {
-      await prisma.category.update({ where: { id }, data: { name, slug } });
+      await prisma.category.update({ where: { id }, data: { name, slug, image: image || null } });
     } else {
-      await prisma.category.create({ data: { name, slug } });
+      await prisma.category.create({ data: { name, slug, image: image || null } });
     }
     revalidatePath("/admin/categorias");
     revalidatePath("/");

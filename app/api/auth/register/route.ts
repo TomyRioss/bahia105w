@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     if (!parsed.success) {
       return NextResponse.json({ error: parsed.error.issues[0].message }, { status: 400 });
     }
-    const { name, email, password } = parsed.data;
+    const { name, surname, email, password } = parsed.data;
 
     const existing = await prisma.user.findUnique({ where: { email } });
     if (existing) {
@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     }
 
     const hashed = await bcrypt.hash(password, 10);
-    await prisma.user.create({ data: { name, email, password: hashed } });
+    await prisma.user.create({ data: { name, surname, email, password: hashed } });
 
     return NextResponse.json({ ok: true });
   } catch (err) {

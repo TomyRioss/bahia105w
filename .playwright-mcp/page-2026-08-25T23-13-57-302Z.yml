@@ -1,0 +1,67 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e32]:
+    - complementary [ref=f6e33]:
+      - paragraph [ref=f6e34]: Panel Admin
+      - link "Productos" [ref=f6e35] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f6e39] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f6e45] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f6e50] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f6e54] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f6e60] [cursor=pointer]:
+        - /url: /
+    - main [ref=f6e61]:
+      - generic [ref=f6e176]:
+        - generic [ref=f6e177]:
+          - heading "Productos" [level=1] [ref=f6e178]
+          - link [ref=f6e179] [cursor=pointer]:
+            - /url: /admin/productos/nuevo
+            - button "Nuevo producto" [ref=f6e180]
+        - table [ref=f6e182]:
+          - rowgroup [ref=f6e183]:
+            - row [ref=f6e184]:
+              - columnheader [ref=f6e185]
+              - columnheader "Imagen" [ref=f6e186]
+              - columnheader "Nombre" [ref=f6e187]
+              - columnheader "Categoría" [ref=f6e188]
+              - columnheader "Precio" [ref=f6e189]
+              - columnheader "Variantes" [ref=f6e190]
+              - columnheader "Stock total" [ref=f6e191]
+              - columnheader "Acciones" [ref=f6e192]
+          - rowgroup [ref=f6e193]:
+            - row [ref=f6e194]:
+              - cell [ref=f6e195]:
+                - button "Expandir variantes" [ref=f6e196]
+              - cell [ref=f6e199]
+              - cell "TEST Sin Variante" [ref=f6e201]
+              - cell "Accesorios" [ref=f6e202]
+              - cell "$1.500,0 MXN" [ref=f6e203]
+              - cell "1" [ref=f6e204]
+              - cell "10" [ref=f6e205]
+              - cell [ref=f6e206]:
+                - link [ref=f6e207] [cursor=pointer]:
+                  - /url: /admin/productos/cmt9a79bo00014gulvgnjfpqw/editar
+                  - button "Editar" [ref=f6e208]
+                - button "Eliminar" [ref=f6e209]
+            - row [ref=f6e210]:
+              - cell [ref=f6e211]:
+                - button "Expandir variantes" [ref=f6e212]
+              - cell [ref=f6e215]:
+                - img "Vestido Tela Sintética" [ref=f6e217]
+              - cell "Vestido Tela Sintética" [ref=f6e218]
+              - cell "Vestidos" [ref=f6e219]
+              - cell "$8.000,0 MXN" [ref=f6e220]
+              - cell "2" [ref=f6e221]
+              - cell "19" [ref=f6e222]
+              - cell [ref=f6e223]:
+                - link [ref=f6e224] [cursor=pointer]:
+                  - /url: /admin/productos/cmt95g1t300002kulohcscpup/editar
+                  - button "Editar" [ref=f6e225]
+                - button "Eliminar" [ref=f6e226]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e28] [cursor=pointer]
+  - alert [ref=f6e70]: Productos

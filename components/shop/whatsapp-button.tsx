@@ -1,7 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 
 export function WhatsappButton() {
+  const pathname = usePathname();
+  // el boton es de la tienda: no va en el panel admin
+  if (pathname?.startsWith("/admin")) return null;
+
   return (
     <Link
       href="https://wa.me/5213222942660"

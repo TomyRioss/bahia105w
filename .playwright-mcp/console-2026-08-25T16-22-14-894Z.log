@@ -1,0 +1,1892 @@
+[    1056ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[    1096ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[    1328ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[    1517ms] [LOG] [Fast Refresh] done in 302ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 1751163ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ http://gc.kis.v2.scr.kaspersky-labs.com/C353CE09-DC46-4BCE-AB46-E828C914CD3C/DE23B60F-10B9-4156-89B9-54AD9CE0D0A4/from?get&nocache=1a658&tm=2026-08-25T16%3A51%3A24.409Z:0
+[ 1751170ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ http://gc.kis.v2.scr.kaspersky-labs.com/C353CE09-DC46-4BCE-AB46-E828C914CD3C/DE23B60F-10B9-4156-89B9-54AD9CE0D0A4/from?get&nocache=1b128&tm=2026-08-25T16%3A51%3A26.056Z&second=true:0
+[ 1751173ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1e8vcs8._.js:776
+[ 3231460ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 3234799ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 3475822ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 3716833ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 3957860ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 4202870ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 4447891ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 4692901ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 4937914ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 5182918ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 5427942ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 5672952ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/hmr?id=EdoFqDNyZQ9SC80WkO72_' failed: WebSocket opening handshake timed out @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0_90u2t._.js:16256
+[ 5673679ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5674185ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5674346ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5674394ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5674395ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1168:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5674396ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5682112ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5702369ms] [LOG] [Fast Refresh] done in 20364ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5702494ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5702785ms] [LOG] [Fast Refresh] done in 401ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5703002ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5703152ms] [LOG] [Fast Refresh] done in 263ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5703236ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5703244ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5703245ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5703246ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5703619ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5703765ms] [LOG] [Fast Refresh] done in 262ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5703867ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5704082ms] [LOG] [Fast Refresh] done in 315ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5704539ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5704542ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5704542ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5704543ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5704704ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5705000ms] [LOG] [Fast Refresh] done in 401ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5705091ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5705093ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5705093ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5705094ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5705142ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5705443ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5705529ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5705567ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5705568ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5705568ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5727067ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5727836ms] [LOG] [Fast Refresh] done in 863ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5727972ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728368ms] [LOG] [Fast Refresh] done in 496ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728422ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5728424ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5728424ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5728425ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5728574ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728768ms] [LOG] [Fast Refresh] done in 299ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728882ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728890ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5728978ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5729155ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5729207ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5729249ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5729250ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5729250ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5807288ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5808271ms] [LOG] [Fast Refresh] done in 1072ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5808393ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5808690ms] [LOG] [Fast Refresh] done in 400ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5808806ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5808808ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5808808ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5808809ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5808963ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5809168ms] [LOG] [Fast Refresh] done in 318ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5809387ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5809546ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5809581ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5809614ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5809614ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5809615ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5815477ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820010ms] [LOG] [Fast Refresh] done in 4629ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820125ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820386ms] [LOG] [Fast Refresh] done in 362ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820499ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820539ms] [LOG] [Fast Refresh] done in 151ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820607ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5820610ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5820610ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5820611ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5820722ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820735ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820844ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820878ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5820983ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5821151ms] [LOG] [Fast Refresh] done in 272ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5821339ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 5821342ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5821342ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5821343ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5821580ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5821737ms] [LOG] [Fast Refresh] done in 264ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5821803ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5822017ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5822047ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5822081ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5822081ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5822082ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5832902ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=CNnLUk04cdWeUh8D-sLdd' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0r5nbpw._.js:13422
+[ 5838546ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5843426ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/admin/productos:0
+[ 5843851ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5843895ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5843935ms] [ERROR] %c%s%c [31m[auth][error][0m JWTSessionError: Read more at https://errors.authjs.dev#jwtsessionerror background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5843935ms] [ERROR] %c%s%c [31m[auth][cause][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   Error: no matching decryption secret
+    at clockTolerance (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:915:15)
+    at async flattenedDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3336:15)
+    at async compactDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3430:23)
+    at async jwtDecrypt (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_jose_dist_webapi_0yq6spq._.js:3464:23)
+    at async Object.decode (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:905:25)
+    at async Module.session (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:4546:29)
+    at async AuthInternal (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5145:24)
+    at async Auth (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\node_modules_@auth_core_1prv_3s._.js:5384:34)
+    at async RootLayout (C:\Users\Pc\Desktop\clientes\conectatuproff\.next\dev\server\chunks\ssr\[root-of-the-server]__1dtchs1._.js:1167:21) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5843935ms] [ERROR] %c%s%c [31m[auth][details][0m: background: #e6e6e6;background: light-dark(rgba(0,0,0,0.1), rgba(255,255,255,0.25));color: #000000;color: light-dark(#000000, #ffffff);border-radius: 2px  Server   {} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5844240ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5844273ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5845013ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5845806ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5845914ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5845987ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5846248ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5846279ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5846371ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5846423ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 5864058ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 5864089ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 6103404ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 6104596ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6131596ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 6135226ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6135355ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2477
+[ 6135356ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6135426ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6135440ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 6135564ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6135606ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos?_rsc=gJvLbHS0Udr_qZza:0
+[ 6135616ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:3318
+[ 6135751ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6136384ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6136545ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6136533ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6136592ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6136713ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6136750ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6137087ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6137134ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6137193ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6137316ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6137377ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6160262ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6163755ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6163910ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6163923ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6164003ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6164134ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6164169ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6164175ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6164204ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6164300ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6164374ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6164516ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6164575ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6164624ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6164682ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6176821ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6180851ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181044ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6181053ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181139ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6181254ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6181288ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6181291ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6181318ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181413ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181487ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6181612ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181689ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6181732ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6202149ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6203295ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6203407ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6203486ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6203509ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6203647ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6203678ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6203681ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6203709ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6203805ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6203878ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6204064ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6204142ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6204202ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6225417ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6227203ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6227285ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6227323ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6227507ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6227539ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6227541ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6227567ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6227666ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6227742ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6227961ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6227981ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6256526ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6256624ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6276538ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6277476ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6277580ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6277600ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6277781ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6277816ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6277825ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6277856ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6277947ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6278023ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6278191ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6278236ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6278299ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6278357ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6302576ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6303650ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6303737ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6303772ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6303941ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6304008ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6303979ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6304009ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6304084ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6304173ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6304409ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6304502ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6304552ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6305474ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6306666ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6306803ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6306831ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6307019ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6307051ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6307076ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6307226ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6307299ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6307402ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6307673ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6307712ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6307788ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6352620ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6353487ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6353565ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6353580ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6353731ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6353773ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6353772ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6353805ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6353898ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6353970ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6354125ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6354184ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6354233ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6354293ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6390640ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6391784ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6391881ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6391907ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6392039ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6392079ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6392078ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6392143ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6392196ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6392289ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6392506ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6392599ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6392664ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6401944ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6403494ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6403624ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6403652ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6403967ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6404162ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6403999ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6404040ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6404169ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6404193ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6404467ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6404476ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6404533ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6404607ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6432433ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6433275ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6433394ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6433575ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6433636ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6433618ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6433634ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6433748ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6433822ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6433964ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6434007ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6434089ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6434159ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6469980ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6471021ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471101ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471122ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6471263ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6471307ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6471301ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6471361ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471419ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471497ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6471653ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471711ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6471761ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6471813ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6502317ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6503990ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504067ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504156ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504177ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6504292ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6504330ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6504328ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6504361ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504446ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504519ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6504661ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504710ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6504769ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6504831ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6506615ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6508704ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6508878ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6508977ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://localhost:3000/admin/productos:0
+[ 6509092ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_react-dom_0kla17-._.js:15305
+[ 6509162ms] Error: ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./app/api/avatar/route.ts:2:1)
+    at Object.getCompilationErrors (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\hot-reloader-turbopack.js:1186:59)
+    at DevBundlerService.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\lib\dev-bundler-service.js:44:55)
+    at DevServer.getCompilationError (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:720:42)
+    at DevServer.findPageComponents (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\dev\next-dev-server.js:690:43)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\Pc\Desktop\clientes\conectatuproff\node_modules\next\dist\server\base-server.js:1694:30)
+[ 6509132ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6509175ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6509242ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6509278ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6509348ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6509524ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6509580ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6509646ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6509709ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226
+[ 6513184ms] [ERROR] ./app/api/avatar/route.ts:2:1
+Export bucketForKey doesn't exist in target module
+  1 | ...extResponse } from "next/server"
+> 2 | ...RIVATE_BUCKETS, bucketForKey, getPublicUrl } from "@/li...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | ...
+  4 | ...e imágenes de storage. Solo sirve buckets públicos: rec...
+  5 | ... buckets privados (DNI, documentos) para no depender so...
+
+The export bucketForKey was not found in module [project]/lib/storage.ts [app-route] (ecmascript).
+Did you mean to import uploadFile?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1945
+[ 6513259ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_1gdrd03._.js:1226

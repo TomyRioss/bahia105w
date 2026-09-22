@@ -1,0 +1,104 @@
+- generic [active] [ref=f29e1]:
+  - generic [ref=f29e245]:
+    - generic [ref=f29e246]:
+      - generic [ref=f29e247]: Envíos a todo México — piezas hechas a mano
+      - banner [ref=f29e248]:
+        - link [ref=f29e249] [cursor=pointer]:
+          - /url: /
+          - img "Bahia 105W" [ref=f29e250]
+        - navigation [ref=f29e251]:
+          - link "Inicio" [ref=f29e252] [cursor=pointer]:
+            - /url: /
+          - link "Tienda" [ref=f29e253] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Nosotros" [ref=f29e254] [cursor=pointer]:
+            - /url: /nosotros
+          - link "Contacto" [ref=f29e255] [cursor=pointer]:
+            - /url: /contacto
+          - link "Cómo Comprar" [ref=f29e256] [cursor=pointer]:
+            - /url: /como-comprar
+        - generic [ref=f29e257]:
+          - searchbox "Buscar..." [ref=f29e259]
+          - button "Cuenta" [ref=f29e260]:
+            - generic [ref=f29e264]: Dev Admin
+          - link "Favoritos" [ref=f29e265] [cursor=pointer]:
+            - /url: /cuenta/favoritos
+          - button "Bolsa" [ref=f29e268]:
+            - generic [ref=f29e272]: "5"
+    - generic [ref=f29e273]:
+      - heading "Checkout" [level=1] [ref=f29e274]
+      - generic [ref=f29e275]:
+        - generic [ref=f29e276]:
+          - generic [ref=f29e277]: 2x TEST Sin Variante (, Única)
+          - generic [ref=f29e278]: $3.000,0 MXN
+        - generic [ref=f29e279]:
+          - generic [ref=f29e280]: 1x TEST Color (Rojo, Única)
+          - generic [ref=f29e281]: $2.000,0 MXN
+        - generic [ref=f29e282]:
+          - generic [ref=f29e283]: 1x TEST Color (Azul, Única)
+          - generic [ref=f29e284]: $2.000,0 MXN
+        - generic [ref=f29e285]:
+          - generic [ref=f29e286]: 1x TEST Color Talla (Rojo, S)
+          - generic [ref=f29e287]: $2.500,0 MXN
+        - generic [ref=f29e288]:
+          - generic [ref=f29e289]: Total
+          - generic [ref=f29e290]: $9.500,0 MXN
+      - paragraph [ref=f29e291]: El pago y envío se coordinan directamente por WhatsApp o email tras confirmar tu pedido.
+      - generic [ref=f29e292]:
+        - generic [ref=f29e293]:
+          - generic [ref=f29e294]: Nombre completo
+          - textbox "Nombre completo" [ref=f29e295]: Dev Admin
+        - generic [ref=f29e296]:
+          - generic [ref=f29e297]: Email
+          - textbox "Email" [ref=f29e298]: dev@admin.com
+        - generic [ref=f29e299]:
+          - generic [ref=f29e300]: Teléfono
+          - textbox "Teléfono" [ref=f29e301]
+        - generic [ref=f29e302]:
+          - generic [ref=f29e303]:
+            - generic [ref=f29e304]: Dirección de envío
+            - button "Usar mi ubicación" [ref=f29e305]
+          - textbox "Dirección de envío" [ref=f29e310]:
+            - /placeholder: Calle, número, colonia, ciudad
+          - paragraph [ref=f29e311]: Escribí tu dirección y elegí una sugerencia, o usá tu ubicación actual.
+        - button "Confirmar pedido" [ref=f29e312]
+    - contentinfo [ref=f29e313]:
+      - generic [ref=f29e314]:
+        - generic [ref=f29e315]:
+          - img "Bahia 105W" [ref=f29e316]
+          - paragraph [ref=f29e317]: +52 981 171 7898
+          - paragraph [ref=f29e318]: hola@boutiquemex.mx
+        - generic [ref=f29e319]:
+          - paragraph [ref=f29e320]: Tienda
+          - link "Vestidos" [ref=f29e321] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Blusas" [ref=f29e322] [cursor=pointer]:
+            - /url: /tienda/blusas
+          - link "Huipiles" [ref=f29e323] [cursor=pointer]:
+            - /url: /tienda/huipiles
+          - link "Accesorios" [ref=f29e324] [cursor=pointer]:
+            - /url: /tienda/accesorios
+        - generic [ref=f29e325]:
+          - paragraph [ref=f29e326]: Legal
+          - link "Aviso de privacidad" [ref=f29e327] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f29e328] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f29e329]:
+          - paragraph [ref=f29e330]: Ubícanos
+          - paragraph [ref=f29e331]: Lázaro Cárdenas 93, Zona Dorada
+          - paragraph [ref=f29e332]: "Horario: Lunes-Sábado 10am-6pm"
+          - iframe [ref=f29e333]:
+            
+      - generic [ref=f29e334]:
+        - paragraph [ref=f29e335]: © 2026 Bahia 105w.
+        - link "Desarrollado por TTM Agencia" [ref=f29e336] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f29e337] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f29e338] [cursor=pointer]:
+    - /url: https://wa.me/5213222942660
+    - generic [ref=f29e109]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f29e118] [cursor=pointer]
+  - alert [ref=f29e129]: Checkout

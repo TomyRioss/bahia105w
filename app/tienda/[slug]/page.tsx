@@ -45,9 +45,17 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
         {data.products.length === 0 ? (
           <p className="text-sm text-foreground/60">Aún no hay productos en esta categoría.</p>
         ) : (
-          <div className="grid w-full max-w-6xl grid-cols-2 gap-6 sm:grid-cols-4">
+          <div className="grid w-full grid-cols-2 gap-6 sm:grid-cols-4">
             {data.products.map((p) => (
-              <ProductCard key={p.id} slug={p.slug} name={p.name} price={p.price.toString()} color={p.swatchColor} img={p.cover} />
+              <ProductCard
+                key={p.id}
+                slug={p.slug}
+                name={p.name}
+                price={p.price.toString()}
+                color={p.swatchColor}
+                img={p.cover}
+                hoverImg={p.hoverImage}
+              />
             ))}
           </div>
         )}

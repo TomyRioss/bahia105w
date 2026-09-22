@@ -1,0 +1,66 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - complementary [ref=f3e3]:
+      - paragraph [ref=f3e4]: Panel Admin
+      - link "Productos" [ref=f3e5] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f3e9] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f3e15] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f3e20] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f3e24] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f3e30] [cursor=pointer]:
+        - /url: /
+    - main [ref=f3e31]:
+      - generic [ref=f3e32]:
+        - heading "Vitrina — Hero, flyers y banners" [level=1] [ref=f3e34]
+        - generic [ref=f3e35]:
+          - generic [ref=f3e36]:
+            - heading "Hero (portada)" [level=2] [ref=f3e37]
+            - button "Nueva imagen" [ref=f3e38]
+          - generic [ref=f3e40]:
+            - img "La belleza de la tradición, reinventada" [ref=f3e42]
+            - generic [ref=f3e43]:
+              - generic [ref=f3e44]: HERO
+              - generic [ref=f3e45]: orden 0
+            - paragraph [ref=f3e46]: La belleza de la tradición, reinventada
+            - generic [ref=f3e47]:
+              - button "Editar" [ref=f3e48]
+              - button "Eliminar" [ref=f3e49]
+        - generic [ref=f3e50]:
+          - generic [ref=f3e51]:
+            - heading "Sección tradición (flyer izq. + banner centro + flyer der.)" [level=2] [ref=f3e52]
+            - button "Nueva imagen" [ref=f3e53]
+          - generic [ref=f3e54]:
+            - generic [ref=f3e55]:
+              - img "Detalle de bordado" [ref=f3e57]
+              - generic [ref=f3e58]:
+                - generic [ref=f3e59]: FLYER
+                - generic [ref=f3e60]: orden 0
+              - paragraph [ref=f3e61]: Detalle de bordado
+              - generic [ref=f3e62]:
+                - button "Editar" [ref=f3e63]
+                - button "Eliminar" [ref=f3e64]
+            - generic [ref=f3e65]:
+              - img "Detalle de bordado" [ref=f3e67]
+              - generic [ref=f3e68]:
+                - generic [ref=f3e69]: FLYER
+                - generic [ref=f3e70]: orden 1
+              - paragraph [ref=f3e71]: Detalle de bordado
+              - generic [ref=f3e72]:
+                - button "Editar" [ref=f3e73]
+                - button "Eliminar" [ref=f3e74]
+            - generic [ref=f3e75]:
+              - img "Donde la tradición se une al estilo contemporáneo" [ref=f3e77]
+              - generic [ref=f3e78]:
+                - generic [ref=f3e79]: BANNER
+                - generic [ref=f3e80]: orden 0
+              - paragraph [ref=f3e81]: Donde la tradición se une al estilo contemporáneo
+              - generic [ref=f3e82]:
+                - button "Editar" [ref=f3e83]
+                - button "Eliminar" [ref=f3e84]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f3e90] [cursor=pointer]

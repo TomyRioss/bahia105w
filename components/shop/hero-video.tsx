@@ -1,11 +1,34 @@
 import Link from "next/link";
 
-export function HeroVideo() {
+const FALLBACK_VIDEO = "https://videos.pexels.com/video-files/7679416/7679416-hd_1366_720_25fps.mp4";
+
+type HeroVideoProps = {
+  videoUrlDesktop?: string | null;
+  videoUrlMobile?: string | null;
+  poster?: string | null;
+  title?: string | null;
+  link?: string | null;
+};
+
+export function HeroVideo({ videoUrlDesktop, videoUrlMobile, poster, title, link }: HeroVideoProps) {
+  const desktopSrc = videoUrlDesktop || FALLBACK_VIDEO;
+  const mobileSrc = videoUrlMobile || desktopSrc;
+
   return (
     <section className="relative h-screen min-h-[560px] w-full overflow-hidden bg-cafe">
       <video
-        className="absolute inset-0 h-full w-full object-cover"
-        src="https://videos.pexels.com/video-files/7679416/7679416-hd_1366_720_25fps.mp4"
+        className="absolute inset-0 hidden h-full w-full object-cover sm:block"
+        src={desktopSrc}
+        poster={poster ?? undefined}
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <video
+        className="absolute inset-0 h-full w-full object-cover sm:hidden"
+        src={mobileSrc}
+        poster={poster ?? undefined}
         autoPlay
         loop
         muted
@@ -14,13 +37,13 @@ export function HeroVideo() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/50" />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 px-6 text-center text-white">
         <h1 className="max-w-2xl text-balance font-serif text-4xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)] sm:text-6xl">
-          Piezas hechas a mano en México
+          {title || "Diseño por artesanos de México y el Mundo"}
         </h1>
         <p className="max-w-md text-sm tracking-wide text-white/85 drop-shadow-[0_1px_6px_rgba(0,0,0,0.6)]">
           Bordado artesanal, una pieza a la vez.
         </p>
         <Link
-          href="/categorias"
+          href={link || "/categorias"}
           className="mt-2 rounded-full bg-white px-8 py-3 text-sm font-medium text-foreground transition hover:bg-white/90"
         >
           Ver colección

@@ -1,0 +1,116 @@
+- generic [ref=f6e1]:
+  - generic [ref=f6e32]:
+    - complementary [ref=f6e33]:
+      - paragraph [ref=f6e34]: Panel Admin
+      - link "Productos" [ref=f6e35] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f6e39] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f6e45] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f6e50] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f6e54] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f6e60] [cursor=pointer]:
+        - /url: /
+    - main [ref=f6e61]:
+      - generic [ref=f6e468]:
+        - heading "Nuevo producto" [level=1] [ref=f6e469]
+        - generic [ref=f6e470]:
+          - generic [ref=f6e471]:
+            - heading "Datos del producto" [level=2] [ref=f6e473]
+            - generic [ref=f6e474]:
+              - generic [ref=f6e475]:
+                - generic [ref=f6e476]: Nombre
+                - textbox "Nombre" [ref=f6e477]:
+                  - /placeholder: Rebozo bordado a mano
+                  - text: TEST Color Talla
+                - paragraph [ref=f6e521]:
+                  - text: Se verá en la tienda como
+                  - generic [ref=f6e522]: /tienda/test-color-talla
+              - generic [ref=f6e478]:
+                - generic [ref=f6e479]: Precio en pesos
+                - spinbutton "Precio en pesos" [ref=f6e480]: "2500"
+              - generic [ref=f6e481]:
+                - generic [ref=f6e482]: Precio de envío (opcional)
+                - spinbutton "Precio de envío (opcional)" [ref=f6e483]
+              - generic [ref=f6e484]:
+                - generic [ref=f6e485]: Categoría
+                - combobox [ref=f6e486]:
+                  - generic [ref=f6e487]: Accesorios
+                  - img: ▼
+                - textbox [ref=f6e488]: cmst3i8ku0003gkulcrl0sp6q
+              - generic [ref=f6e489]:
+                - generic [ref=f6e490]: Descripción
+                - textbox "Descripción" [ref=f6e491]:
+                  - /placeholder: "Contá cómo está hecho y con qué material. Ej: Rebozo tejido artesanalmente, flecos anudados a mano. Material: rayón."
+                  - text: Producto de prueba con variantes de color y talla.
+          - generic [ref=f6e492]:
+            - generic [ref=f6e493]:
+              - heading "Fotos del producto" [level=2] [ref=f6e494]
+              - paragraph [ref=f6e495]: La primera foto es la portada en la tienda. Podés subir varias y quitar las que no quieras.
+            - generic [ref=f6e496]:
+              - generic [ref=f6e497] [cursor=pointer]:
+                - generic [ref=f6e502]: Subir fotos
+                - generic [ref=f6e503]: Arrastrá los archivos acá o tocá para elegirlos del dispositivo.
+              - button "Subir fotos Arrastrá los archivos acá o tocá para elegirlos del dispositivo." [ref=f6e504]
+          - generic [ref=f6e505]:
+            - generic [ref=f6e506]:
+              - heading "Stock del producto estándar" [level=2] [ref=f6e507]
+              - paragraph [ref=f6e508]: El producto siempre se puede comprar tal cual, sin elegir color ni talla. Estas son sus piezas disponibles.
+            - generic [ref=f6e509]:
+              - generic [ref=f6e510]: Piezas disponibles
+              - spinbutton "Piezas disponibles" [ref=f6e511]: "0"
+          - generic [ref=f6e512]:
+            - generic [ref=f6e513]:
+              - heading "Colores y talles (opcional)" [level=2] [ref=f6e514]
+              - paragraph [ref=f6e515]: Además del estándar, podés sumar combinaciones de color/talla con su propio stock, fotos y precio.
+            - generic [ref=f6e525]:
+              - generic [ref=f6e526]:
+                - generic [ref=f6e527]:
+                  - button "Arrastrar para reordenar opción 1" [ref=f6e528]
+                  - paragraph [ref=f6e534]: Opción 1
+                - button "Quitar opción 1" [ref=f6e535] [cursor=pointer]: Quitar esta opción
+              - generic [ref=f6e536]:
+                - generic [ref=f6e537]:
+                  - generic [ref=f6e538]: Color
+                  - textbox "Color" [ref=f6e539]:
+                    - /placeholder: Negro
+                - generic [ref=f6e540]:
+                  - generic [ref=f6e541]: Talle
+                  - textbox "Talle" [ref=f6e542]:
+                    - /placeholder: Única
+                - generic [ref=f6e543]:
+                  - generic [ref=f6e544]: Piezas disponibles
+                  - spinbutton "Piezas disponibles" [ref=f6e545]: "0"
+                - generic [ref=f6e546]:
+                  - generic [ref=f6e547]: Precio (opcional)
+                  - spinbutton "Precio (opcional)" [ref=f6e548]
+              - generic [ref=f6e549]:
+                - generic [ref=f6e550]:
+                  - generic [ref=f6e551]: Foto principal de esta opción
+                  - generic [ref=f6e552]:
+                    - generic [ref=f6e553] [cursor=pointer]:
+                      - generic [ref=f6e558]: Subir fotos
+                      - generic [ref=f6e559]: "Es la que se muestra al elegir este color. Podés subir varias juntas: la primera queda de portada."
+                    - 'button "Subir fotos Es la que se muestra al elegir este color. Podés subir varias juntas: la primera queda de portada." [ref=f6e560]'
+                - generic [ref=f6e561]:
+                  - generic [ref=f6e562]: Más fotos de esta opción
+                  - generic [ref=f6e563]:
+                    - generic [ref=f6e564] [cursor=pointer]:
+                      - generic [ref=f6e569]: Subir fotos
+                      - generic [ref=f6e570]: "Opcional: detalles, otro ángulo, la prenda puesta."
+                    - 'button "Subir fotos Opcional: detalles, otro ángulo, la prenda puesta." [ref=f6e571]'
+              - generic [ref=f6e572]:
+                - generic [ref=f6e573]: Descripción propia (opcional)
+                - textbox "Descripción propia (opcional)" [ref=f6e574]:
+                  - /placeholder: Si la dejás vacía se usa la descripción del producto.
+            - status [ref=f6e516]
+            - button "Agregar otro color o talle" [active] [ref=f6e575]
+          - generic [ref=f6e518]:
+            - button "Cancelar" [ref=f6e519]
+            - button "Guardar producto" [ref=f6e520]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e28] [cursor=pointer]
+  - alert [ref=f6e70]: Nuevo producto

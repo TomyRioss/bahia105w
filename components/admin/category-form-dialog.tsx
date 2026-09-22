@@ -6,9 +6,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { MediaUploader } from "@/components/admin/media-uploader";
 import { saveCategory } from "@/lib/actions/admin-categories";
+import { uploadBannerFile } from "@/lib/actions/admin-banners";
+import { slugify } from "@/lib/slug";
 
-type Category = { id: string; name: string; slug: string };
+type Category = { id: string; name: string; slug: string; image?: string | null };
 
 export function CategoryFormDialog({
   category,
@@ -19,23 +22,28 @@ export function CategoryFormDialog({
 }) {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [name, setName] = useState(category?.name ?? "");
+  const [image, setImage] = useState<string[]>(category?.image ? [category.image] : []);
+
+  const slug = category?.slug ?? slugify(name);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
-    const form = new FormData(e.currentTarget);
-    const res = await saveCategory({
-      id: category?.id,
-      name: form.get("name"),
-      slug: form.get("slug"),
-    });
-    setLoading(false);
-    if (res.error) {
-      toast.error(res.error);
-      return;
+    try {
+      const res = await saveCategory({ id: category?.id, name, slug, image: image[0] ?? "" });
+      if (res.error) {
+        toast.error(res.error);
+        return;
+      }
+      toast.success("Categoría guardada.");
+      setOpen(false);
+    } catch (err) {
+      console.error("[category-form]", err);
+      toast.error("No se pudo guardar la categoría. Probá de nuevo.");
+    } finally {
+      setLoading(false);
     }
-    toast.success("Categoría guardada.");
-    setOpen(false);
   }
 
   return (
@@ -48,14 +56,31 @@ export function CategoryFormDialog({
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1.5">
             <Label htmlFor="name">Nombre</Label>
-            <Input id="name" name="name" defaultValue={category?.name} required />
+            <Input
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Vestidos"
+              required
+            />
+            {slug && (
+              <p className="text-xs text-foreground/55">
+                Se verá en la tienda como <span className="font-medium">/tienda/{slug}</span>
+              </p>
+            )}
           </div>
           <div className="flex flex-col gap-1.5">
-            <Label htmlFor="slug">Slug</Label>
-            <Input id="slug" name="slug" defaultValue={category?.slug} placeholder="vestidos" required />
+            <Label>Imagen</Label>
+            <MediaUploader
+              value={image}
+              onChange={setImage}
+              upload={uploadBannerFile}
+              compact
+              hint="Foto que representa la categoría en la tienda."
+            />
           </div>
           <Button type="submit" disabled={loading}>
-            Guardar
+            {loading ? "Guardando…" : "Guardar categoría"}
           </Button>
         </form>
       </DialogContent>

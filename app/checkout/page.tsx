@@ -12,6 +12,7 @@ import { Label } from "@/components/ui/label";
 import { useCartStore, cartTotal } from "@/lib/cart-store";
 import { formatPrice } from "@/lib/format";
 import { createOrder } from "@/lib/actions/orders";
+import { AddressAutocomplete } from "@/components/shop/address-autocomplete";
 
 export default function CheckoutPage() {
   const { data: session } = useSession();
@@ -20,6 +21,7 @@ export default function CheckoutPage() {
   const total = cartTotal(items);
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [address, setAddress] = useState("");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -34,6 +36,7 @@ export default function CheckoutPage() {
         contactName: String(form.get("contactName") ?? ""),
         contactEmail: String(form.get("contactEmail") ?? ""),
         contactPhone: String(form.get("contactPhone") ?? ""),
+        contactAddress: String(form.get("contactAddress") ?? ""),
         items: items.map((i) => ({ variantId: i.variantId, quantity: i.quantity, price: i.price })),
       });
       if (res.error) {
@@ -83,11 +86,18 @@ export default function CheckoutPage() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="contactName">Nombre completo</Label>
-                <Input id="contactName" name="contactName" required defaultValue={session?.user?.name ?? ""} />
+                <Input
+                  key={`name-${session?.user?.id ?? "anon"}`}
+                  id="contactName"
+                  name="contactName"
+                  required
+                  defaultValue={session?.user?.name ?? ""}
+                />
               </div>
               <div className="flex flex-col gap-1.5">
                 <Label htmlFor="contactEmail">Email</Label>
                 <Input
+                  key={`email-${session?.user?.id ?? "anon"}`}
                   id="contactEmail"
                   name="contactEmail"
                   type="email"
@@ -99,6 +109,8 @@ export default function CheckoutPage() {
                 <Label htmlFor="contactPhone">Teléfono</Label>
                 <Input id="contactPhone" name="contactPhone" type="tel" required />
               </div>
+              <AddressAutocomplete value={address} onChange={setAddress} />
+
               <Button type="submit" disabled={loading} size="lg" className="rounded-full">
                 Confirmar pedido
               </Button>

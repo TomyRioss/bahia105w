@@ -1,0 +1,117 @@
+- generic [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - generic [ref=f9e4]: Envíos a todo México — piezas hechas a mano
+      - banner [ref=f9e5]:
+        - link [ref=f9e6] [cursor=pointer]:
+          - /url: /
+          - img "Bahia 105W" [ref=f9e7]
+        - navigation [ref=f9e8]:
+          - link "Inicio" [ref=f9e9] [cursor=pointer]:
+            - /url: /
+          - link "Tienda" [ref=f9e10] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Nosotros" [ref=f9e11] [cursor=pointer]:
+            - /url: /nosotros
+          - link "Contacto" [ref=f9e12] [cursor=pointer]:
+            - /url: /contacto
+          - link "Cómo Comprar" [ref=f9e13] [cursor=pointer]:
+            - /url: /como-comprar
+        - generic [ref=f9e14]:
+          - searchbox "Buscar..." [ref=f9e16]
+          - button "Cuenta" [ref=f9e122]:
+            - generic [ref=f9e126]: Dev Admin
+          - link "Favoritos" [ref=f9e22] [cursor=pointer]:
+            - /url: /cuenta/favoritos
+          - button "Bolsa" [ref=f9e25]:
+            - generic [ref=f9e127]: "1"
+    - main [ref=f9e29]:
+      - generic [ref=f9e31]:
+        - generic [ref=f9e32]:
+          - paragraph [ref=f9e33]: Accesorios
+          - heading "TEST Sin Variante" [level=1] [ref=f9e34]
+          - paragraph [ref=f9e35]: $1.500,0 MXN
+        - generic [ref=f9e36]:
+          - generic [ref=f9e37]:
+            - paragraph [ref=f9e38]: Cantidad
+            - generic [ref=f9e40]:
+              - button "Reducir cantidad" [disabled] [ref=f9e41]
+              - generic [ref=f9e43]: "1"
+              - button "Aumentar cantidad" [ref=f9e44]
+          - button "Añadido" [active] [ref=f9e128]
+        - button "Favorito" [ref=f9e47]: Guardar
+        - paragraph [ref=f9e50]: Producto de prueba sin variantes.
+      - generic [ref=f9e51]:
+        - heading "Te puede gustar en Accesorios" [level=2] [ref=f9e52]
+        - generic [ref=f9e53]:
+          - link [ref=f9e54] [cursor=pointer]:
+            - /url: /producto/test-color-talla
+            - generic [ref=f9e56]:
+              - paragraph [ref=f9e57]: TEST Color Talla
+              - paragraph [ref=f9e58]: $2.500,0 MXN
+          - link [ref=f9e59] [cursor=pointer]:
+            - /url: /producto/test-color
+            - generic [ref=f9e61]:
+              - paragraph [ref=f9e62]: TEST Color
+              - paragraph [ref=f9e63]: $2.000,0 MXN
+      - generic [ref=f9e64]:
+        - heading "Recomendados" [level=2] [ref=f9e65]
+        - generic [ref=f9e66]:
+          - link [ref=f9e67] [cursor=pointer]:
+            - /url: /producto/test-color-talla
+            - generic [ref=f9e69]:
+              - paragraph [ref=f9e70]: TEST Color Talla
+              - paragraph [ref=f9e71]: $2.500,0 MXN
+          - link [ref=f9e72] [cursor=pointer]:
+            - /url: /producto/test-color
+            - generic [ref=f9e74]:
+              - paragraph [ref=f9e75]: TEST Color
+              - paragraph [ref=f9e76]: $2.000,0 MXN
+          - link [ref=f9e77] [cursor=pointer]:
+            - /url: /producto/vestido-tela-sintetica
+            - generic [ref=f9e78]:
+              - img "Vestido Tela Sintética" [ref=f9e79]
+              - img "Vestido Tela Sintética" [ref=f9e80]
+            - generic [ref=f9e81]:
+              - paragraph [ref=f9e82]: Vestido Tela Sintética
+              - paragraph [ref=f9e83]: $8.000,0 MXN
+    - contentinfo [ref=f9e84]:
+      - generic [ref=f9e85]:
+        - generic [ref=f9e86]:
+          - img "Bahia 105W" [ref=f9e87]
+          - paragraph [ref=f9e88]: +52 981 171 7898
+          - paragraph [ref=f9e89]: hola@boutiquemex.mx
+        - generic [ref=f9e90]:
+          - paragraph [ref=f9e91]: Tienda
+          - link "Vestidos" [ref=f9e92] [cursor=pointer]:
+            - /url: /tienda/vestidos
+          - link "Blusas" [ref=f9e93] [cursor=pointer]:
+            - /url: /tienda/blusas
+          - link "Huipiles" [ref=f9e94] [cursor=pointer]:
+            - /url: /tienda/huipiles
+          - link "Accesorios" [ref=f9e95] [cursor=pointer]:
+            - /url: /tienda/accesorios
+        - generic [ref=f9e96]:
+          - paragraph [ref=f9e97]: Legal
+          - link "Aviso de privacidad" [ref=f9e98] [cursor=pointer]:
+            - /url: "#"
+          - link "Envíos y devoluciones" [ref=f9e99] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f9e100]:
+          - paragraph [ref=f9e101]: Ubícanos
+          - paragraph [ref=f9e102]: Lázaro Cárdenas 93, Zona Dorada
+          - paragraph [ref=f9e103]: "Horario: Lunes-Sábado 10am-6pm"
+          - iframe [ref=f9e130]:
+            
+      - generic [ref=f9e104]:
+        - paragraph [ref=f9e105]: © 2026 Bahia 105w.
+        - link "Desarrollado por TTM Agencia" [ref=f9e106] [cursor=pointer]:
+          - /url: https://ttmagencia.com/
+        - link "Admin" [ref=f9e107] [cursor=pointer]:
+          - /url: /admin/login
+  - link "Asesorate con nosotros por WhatsApp" [ref=f9e108] [cursor=pointer]:
+    - /url: https://wa.me/5213222942660
+    - generic [ref=f9e109]: Asesorate con nosotros
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f9e118] [cursor=pointer]
+  - alert [ref=f9e131]

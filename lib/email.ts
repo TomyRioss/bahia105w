@@ -7,6 +7,7 @@ export async function sendNewOrderEmail(order: {
   contactName: string;
   contactEmail: string;
   contactPhone: string;
+  contactAddress?: string;
   total: number | string;
 }) {
   if (!resend || !process.env.VENDOR_EMAIL) {
@@ -24,6 +25,7 @@ export async function sendNewOrderEmail(order: {
         <p><strong>Cliente:</strong> ${order.contactName}</p>
         <p><strong>Email:</strong> ${order.contactEmail}</p>
         <p><strong>Teléfono:</strong> ${order.contactPhone}</p>
+        ${order.contactAddress ? `<p><strong>Dirección:</strong> ${order.contactAddress}</p>` : ""}
         <p><strong>Total:</strong> $${order.total}</p>
         <p>Revisa el detalle completo en el panel admin.</p>
       `,

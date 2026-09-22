@@ -78,6 +78,7 @@ export function LoginForm() {
     setLoading(true);
     const payload = {
       name: form.get("name"),
+      surname: form.get("surname"),
       email: form.get("email"),
       password,
     };
@@ -165,6 +166,10 @@ export function LoginForm() {
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="reg-name">Nombre</Label>
               <Input id="reg-name" name="name" required />
+            </div>
+            <div className="flex flex-col gap-1.5">
+              <Label htmlFor="reg-surname">Apellido</Label>
+              <Input id="reg-surname" name="surname" required />
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="reg-email">Email</Label>

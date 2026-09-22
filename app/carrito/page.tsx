@@ -54,7 +54,8 @@ export default function CartPage() {
                     <span className="w-6 text-center text-sm">{item.quantity}</span>
                     <button
                       onClick={() => setQuantity(item.variantId, item.quantity + 1)}
-                      className="rounded-full border border-foreground/20 p-1.5 hover:bg-foreground/5"
+                      disabled={item.quantity >= item.stock}
+                      className="rounded-full border border-foreground/20 p-1.5 hover:bg-foreground/5 disabled:opacity-40"
                       aria-label="Aumentar cantidad"
                     >
                       <FiPlus className="h-3.5 w-3.5" />

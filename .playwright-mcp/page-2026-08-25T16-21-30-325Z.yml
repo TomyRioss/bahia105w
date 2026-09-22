@@ -1,0 +1,91 @@
+- generic [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - complementary [ref=f3e3]:
+      - paragraph [ref=f3e4]: Panel Admin
+      - link [ref=f3e94] [cursor=pointer]:
+        - /url: /admin/productos
+        - text: Productos
+      - link [ref=f3e95] [cursor=pointer]:
+        - /url: /admin/categorias
+        - text: Categorías
+      - link [ref=f3e96] [cursor=pointer]:
+        - /url: /admin/banners
+        - text: Vitrina
+      - link [ref=f3e97] [cursor=pointer]:
+        - /url: /admin/pedidos
+        - text: Pedidos
+      - link [ref=f3e98] [cursor=pointer]:
+        - /url: /admin/usuarios
+        - text: Usuarios
+      - link [ref=f3e99] [cursor=pointer]:
+        - /url: /
+        - text: ← Volver a la tienda
+    - main [ref=f3e31]:
+      - generic [ref=f3e32]:
+        - heading [level=1] [ref=f3e100]: Vitrina — Hero, flyers y banners
+        - generic [ref=f3e35]:
+          - generic [ref=f3e36]:
+            - heading [level=2] [ref=f3e101]: Hero (portada)
+            - button [expanded] [ref=f3e102]: Nueva imagen
+          - generic [ref=f3e40]:
+            - generic [ref=f3e43]:
+              - generic [ref=f3e44]: HERO
+              - generic [ref=f3e45]: orden 0
+            - paragraph [ref=f3e46]: La belleza de la tradición, reinventada
+            - generic [ref=f3e47]:
+              - button [ref=f3e104]: Editar
+              - button [ref=f3e105]
+        - generic [ref=f3e50]:
+          - generic [ref=f3e51]:
+            - heading [level=2] [ref=f3e106]: Sección tradición (flyer izq. + banner centro + flyer der.)
+            - button [ref=f3e107]: Nueva imagen
+          - generic [ref=f3e54]:
+            - generic [ref=f3e55]:
+              - generic [ref=f3e58]:
+                - generic [ref=f3e59]: FLYER
+                - generic [ref=f3e60]: orden 0
+              - paragraph [ref=f3e61]: Detalle de bordado
+              - generic [ref=f3e62]:
+                - button [ref=f3e109]: Editar
+                - button [ref=f3e110]
+            - generic [ref=f3e65]:
+              - generic [ref=f3e68]:
+                - generic [ref=f3e69]: FLYER
+                - generic [ref=f3e70]: orden 1
+              - paragraph [ref=f3e71]: Detalle de bordado
+              - generic [ref=f3e72]:
+                - button [ref=f3e112]: Editar
+                - button [ref=f3e113]
+            - generic [ref=f3e75]:
+              - generic [ref=f3e78]:
+                - generic [ref=f3e79]: BANNER
+                - generic [ref=f3e80]: orden 0
+              - paragraph [ref=f3e81]: Donde la tradición se une al estilo contemporáneo
+              - generic [ref=f3e82]:
+                - button [ref=f3e115]: Editar
+                - button [ref=f3e116]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f3e90] [cursor=pointer]
+  - alert [ref=f3e117]
+  - dialog [ref=f3e121]:
+    - heading "Nueva imagen" [level=2] [ref=f3e123]
+    - generic [ref=f3e124]:
+      - generic [ref=f3e125]:
+        - generic [ref=f3e126]: Imagen o video de portada
+        - generic [ref=f3e127]:
+          - generic [ref=f3e128] [cursor=pointer]:
+            - generic [ref=f3e133]: Subir foto
+            - generic [ref=f3e134]: Se muestra a pantalla completa. Podés subir una foto o un video.
+          - button "Subir foto Se muestra a pantalla completa. Podés subir una foto o un video." [active] [ref=f3e135]
+      - generic [ref=f3e136]:
+        - generic [ref=f3e137]: Título sobre la imagen (opcional)
+        - textbox "Título sobre la imagen (opcional)" [ref=f3e138]:
+          - /placeholder: Nueva colección
+      - generic [ref=f3e139]:
+        - generic [ref=f3e140]: ¿A dónde lleva al tocarla?
+        - combobox [ref=f3e141]:
+          - generic [ref=f3e142]: A ningún lado
+          - img: ▼
+        - textbox [ref=f3e143]: none
+      - button "Guardar" [ref=f3e144]
+    - button "Close" [ref=f3e145]

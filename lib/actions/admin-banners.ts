@@ -4,16 +4,39 @@ import { revalidatePath } from "next/cache";
 import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/actions/admin-guard";
 import { bannerSchema } from "@/lib/validations/admin";
+import { uploadImage } from "@/lib/supabase";
+
+export async function uploadBannerFile(formData: FormData) {
+  await requireAdmin();
+  const file = formData.get("file");
+  if (!(file instanceof File) || file.size === 0) return { error: "Archivo inválido." };
+
+  try {
+    const url = await uploadImage(file, "banners");
+    return { url };
+  } catch (err) {
+    console.error("[uploadBannerFile]", err);
+    return { error: "No se pudo subir el archivo." };
+  }
+}
 
 export async function saveBanner(input: unknown) {
   await requireAdmin();
   const parsed = bannerSchema.safeParse(input);
   if (!parsed.success) return { error: parsed.error.issues[0].message };
 
-  const { id, type, imageUrl, title, link, order } = parsed.data;
+  const { id, type, imageUrl, videoUrlDesktop, videoUrlMobile, title, link, order } = parsed.data;
 
   try {
-    const data = { type, imageUrl, title: title || null, link: link || null, order };
+    const data = {
+      type,
+      imageUrl,
+      videoUrlDesktop: videoUrlDesktop || null,
+      videoUrlMobile: videoUrlMobile || null,
+      title: title || null,
+      link: link || null,
+      order,
+    };
     if (id) {
       await prisma.banner.update({ where: { id }, data });
     } else {

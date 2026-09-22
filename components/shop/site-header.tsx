@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import { FiSearch, FiUser, FiHeart, FiShoppingBag } from "react-icons/fi";
 import { useCartStore, cartCount } from "@/lib/cart-store";
+import { CartDrawer } from "@/components/shop/cart-drawer";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,7 +20,6 @@ const NAV = [
   { href: "/tienda/vestidos", label: "Tienda" },
   { href: "/nosotros", label: "Nosotros" },
   { href: "/contacto", label: "Contacto" },
-  { href: "/como-comprar", label: "Cómo Comprar" },
 ];
 
 export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
@@ -29,6 +29,7 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(!overHero);
   const [query, setQuery] = useState("");
+  const [cartOpen, setCartOpen] = useState(false);
 
   useEffect(() => {
     if (!overHero) return;
@@ -47,7 +48,7 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
           transparent ? "bg-transparent text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]" : "bg-cafe text-cream"
         }`}
       >
-        Envíos a todo el mundo — piezas hechas a mano en México
+        Envíos a todo México — piezas hechas a mano
       </div>
 
       <header
@@ -60,7 +61,7 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
           style={{ width: transparent ? "clamp(4.5rem, 8vw, 6.5rem)" : "3rem" }}
           className="relative aspect-square shrink-0 transition-[width] duration-500 ease-out"
         >
-          <Image src="/logo.jpg" alt="Bahia 105W" fill priority className="object-contain" />
+          <Image src="/logo.png" alt="Bahia 105W" fill priority className="object-contain" />
         </Link>
         <nav
           style={{ flexGrow: transparent ? 0 : 1, marginLeft: transparent ? "2.5rem" : "0" }}
@@ -102,9 +103,12 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
             <DropdownMenu>
               <DropdownMenuTrigger
                 aria-label="Cuenta"
-                className={transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}
+                className={`flex items-center gap-2 ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
               >
                 <FiUser className="h-5 w-5" />
+                <span className="hidden text-sm sm:inline">
+                  {[session.user.name, session.user.surname].filter(Boolean).join(" ")}
+                </span>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => router.push("/cuenta/pedidos")}>Mis pedidos</DropdownMenuItem>
@@ -116,9 +120,10 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
             <Link
               href="/login"
               aria-label="Cuenta"
-              className={transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}
+              className={`flex items-center gap-2 ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
             >
               <FiUser className="h-5 w-5" />
+              <span className="hidden text-sm sm:inline">Iniciar sesión</span>
             </Link>
           )}
           <Link
@@ -128,8 +133,8 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
           >
             <FiHeart className="h-5 w-5" />
           </Link>
-          <Link
-            href={session?.user ? "/carrito" : "/login"}
+          <button
+            onClick={() => setCartOpen(true)}
             aria-label="Bolsa"
             className={`relative ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
           >
@@ -139,9 +144,10 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
                 {count}
               </span>
             )}
-          </Link>
+          </button>
         </div>
       </header>
+      <CartDrawer open={cartOpen} onOpenChange={setCartOpen} />
     </div>
   );
 }

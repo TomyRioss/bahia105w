@@ -11,9 +11,30 @@ export async function updateOrderStatus(id: string, status: (typeof STATUSES)[nu
   if (!STATUSES.includes(status)) return { error: "Estado inválido." };
 
   try {
-    await prisma.order.update({ where: { id }, data: { status } });
+    const order = await prisma.order.findUnique({
+      where: { id },
+      select: { status: true, items: { select: { productVariantId: true, quantity: true } } },
+    });
+    if (!order) return { error: "Pedido no encontrado." };
+
+    // Descontar stock solo en la transición a COMPLETADO, para no descontar dos veces.
+    const deducts = status === "COMPLETADO" && order.status !== "COMPLETADO";
+
+    await prisma.$transaction([
+      prisma.order.update({ where: { id }, data: { status } }),
+      ...(deducts
+        ? order.items.map((it) =>
+            prisma.productVariant.update({
+              where: { id: it.productVariantId },
+              data: { stock: { decrement: it.quantity } },
+            })
+          )
+        : []),
+    ]);
+
     revalidatePath("/admin/pedidos");
     revalidatePath("/cuenta/pedidos");
+    revalidatePath("/admin/productos");
     return { ok: true };
   } catch (err) {
     console.error("[updateOrderStatus]", err);

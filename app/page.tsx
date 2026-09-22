@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiPackage, FiTruck } from "react-icons/fi";
+import { FiTruck } from "react-icons/fi";
 import { FaWhatsapp, FaInstagram, FaFacebookF } from "react-icons/fa";
 import { SiteHeader } from "@/components/shop/site-header";
 import { SiteFooter } from "@/components/shop/site-footer";
@@ -11,13 +11,15 @@ import { getBanners, getCategoriesWithThumbnail, getProductsWithCover } from "@/
 export const revalidate = 60;
 
 export default async function Home() {
-  const [flyers, banners, categories, products] = await Promise.all([
+  const [heroBanners, flyers, banners, categories, products] = await Promise.all([
+    getBanners("HERO"),
     getBanners("FLYER"),
     getBanners("BANNER"),
     getCategoriesWithThumbnail(),
     getProductsWithCover(8),
   ]);
 
+  const hero = heroBanners[0];
   const [flyerLeft, flyerRight] = flyers;
   const centerBanner = banners[0];
 
@@ -26,7 +28,13 @@ export default async function Home() {
       <SiteHeader overHero />
       <main className="flex-1">
 
-      <HeroVideo />
+      <HeroVideo
+        videoUrlDesktop={hero?.videoUrlDesktop}
+        videoUrlMobile={hero?.videoUrlMobile}
+        poster={hero?.imageUrl}
+        title={hero?.title}
+        link={hero?.link}
+      />
 
       <section className="flex flex-col items-center gap-10 bg-cream px-6 py-20 sm:px-10">
         <div className="flex flex-col items-center gap-2 text-center">
@@ -94,8 +102,8 @@ export default async function Home() {
         <div className="flex flex-col items-center gap-2">
           <h2 className="font-serif text-3xl">¿Quiénes somos?</h2>
           <p className="max-w-xl text-sm text-foreground/70">
-            Somos Bahía 105W, un espacio dedicado a piezas hechas a mano en México. Cada prenda está bordada por
-            artesanas mexicanas, celebrando la tradición y el trabajo manual detrás de cada diseño.
+            Somos Bahía 105W, un espacio dedicado a piezas hechas a mano. Diseño por artesanos de México y el Mundo,
+            celebrando la tradición y el trabajo manual detrás de cada diseño.
           </p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -129,16 +137,11 @@ export default async function Home() {
         </div>
       </section>
 
-      <section id="nosotros" className="grid grid-cols-1 gap-10 px-6 py-16 text-center sm:grid-cols-3 sm:px-10">
+      <section id="nosotros" className="grid grid-cols-1 gap-10 px-6 py-16 text-center sm:grid-cols-2 sm:px-10">
         <div className="flex flex-col items-center gap-2">
           <FiTruck className="h-6 w-6 text-foreground/70" />
-          <p className="font-medium">Envíos a todo el mundo</p>
-          <p className="max-w-xs text-sm text-foreground/70">Directo a tu puerta, en cualquier parte.</p>
-        </div>
-        <div className="flex flex-col items-center gap-2">
-          <FiPackage className="h-6 w-6 text-foreground/70" />
-          <p className="font-medium">Mayoreo</p>
-          <p className="max-w-xs text-sm text-foreground/70">Soporte de mayoreo listo para ayudarte.</p>
+          <p className="font-medium">Envíos a todo México</p>
+          <p className="max-w-xs text-sm text-foreground/70">Directo a tu puerta, en cualquier parte del país.</p>
         </div>
         <div className="flex flex-col items-center gap-2">
           <FaWhatsapp className="h-6 w-6 text-[#25D366]" />

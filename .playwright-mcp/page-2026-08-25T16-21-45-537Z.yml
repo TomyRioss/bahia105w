@@ -1,0 +1,59 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - complementary [ref=f4e3]:
+      - paragraph [ref=f4e4]: Panel Admin
+      - link "Productos" [ref=f4e5] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f4e9] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f4e15] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f4e20] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f4e24] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f4e30] [cursor=pointer]:
+        - /url: /
+    - main [ref=f4e31]:
+      - generic [ref=f4e32]:
+        - generic [ref=f4e33]:
+          - heading "Categorías" [level=1] [ref=f4e34]
+          - button "Nueva categoría" [ref=f4e35]
+        - table [ref=f4e37]:
+          - rowgroup [ref=f4e38]:
+            - row [ref=f4e39]:
+              - columnheader "Nombre" [ref=f4e40]
+              - columnheader "Slug" [ref=f4e41]
+              - columnheader "Productos" [ref=f4e42]
+              - columnheader "Acciones" [ref=f4e43]
+          - rowgroup [ref=f4e44]:
+            - row [ref=f4e45]:
+              - cell "Accesorios" [ref=f4e46]
+              - cell "accesorios" [ref=f4e47]
+              - cell "1" [ref=f4e48]
+              - cell [ref=f4e49]:
+                - button "Editar" [ref=f4e50]
+                - button "Eliminar" [ref=f4e51]
+            - row [ref=f4e52]:
+              - cell "Blusas" [ref=f4e53]
+              - cell "blusas" [ref=f4e54]
+              - cell "1" [ref=f4e55]
+              - cell [ref=f4e56]:
+                - button "Editar" [ref=f4e57]
+                - button "Eliminar" [ref=f4e58]
+            - row [ref=f4e59]:
+              - cell "Huipiles" [ref=f4e60]
+              - cell "huipiles" [ref=f4e61]
+              - cell "1" [ref=f4e62]
+              - cell [ref=f4e63]:
+                - button "Editar" [ref=f4e64]
+                - button "Eliminar" [ref=f4e65]
+            - row [ref=f4e66]:
+              - cell "Vestidos" [ref=f4e67]
+              - cell "vestidos" [ref=f4e68]
+              - cell "3" [ref=f4e69]
+              - cell [ref=f4e70]:
+                - button "Editar" [ref=f4e71]
+                - button "Eliminar" [ref=f4e72]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f4e78] [cursor=pointer]

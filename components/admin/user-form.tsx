@@ -17,20 +17,25 @@ export function AdminUserForm() {
     setLoading(true);
     const form = new FormData(e.currentTarget);
 
-    const res = await createAdmin({
-      name: form.get("name"),
-      email: form.get("email"),
-      password: form.get("password"),
-    });
-
-    setLoading(false);
-    if (res.error) {
-      toast.error(res.error);
-      return;
+    try {
+      const res = await createAdmin({
+        name: form.get("name"),
+        email: form.get("email"),
+        password: form.get("password"),
+      });
+      if (res.error) {
+        toast.error(res.error);
+        return;
+      }
+      toast.success("Cuenta creada.");
+      (e.target as HTMLFormElement).reset();
+      router.refresh();
+    } catch (err) {
+      console.error("[user-form]", err);
+      toast.error("No se pudo crear la cuenta. Probá de nuevo.");
+    } finally {
+      setLoading(false);
     }
-    toast.success("Admin creado.");
-    (e.target as HTMLFormElement).reset();
-    router.refresh();
   }
 
   return (
@@ -45,10 +50,18 @@ export function AdminUserForm() {
       </div>
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="new-admin-password">Contraseña</Label>
-        <Input id="new-admin-password" name="password" type="password" minLength={6} required />
+        <Input
+          id="new-admin-password"
+          name="password"
+          type="password"
+          minLength={6}
+          autoComplete="new-password"
+          required
+        />
+        <p className="text-xs text-foreground/55">Al menos 6 caracteres.</p>
       </div>
       <Button type="submit" disabled={loading}>
-        {loading ? "Creando…" : "Crear admin"}
+        {loading ? "Creando…" : "Crear cuenta"}
       </Button>
     </form>
   );

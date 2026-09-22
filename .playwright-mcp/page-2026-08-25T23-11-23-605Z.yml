@@ -1,0 +1,26 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e32]:
+    - complementary [ref=f6e33]:
+      - paragraph [ref=f6e34]: Panel Admin
+      - link "Productos" [ref=f6e35] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f6e39] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f6e45] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f6e50] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f6e54] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f6e60] [cursor=pointer]:
+        - /url: /
+    - main [ref=f6e61]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e62] [cursor=pointer]:
+    - generic [ref=f6e65]:
+      - text: Rendering
+      - generic [ref=f6e66]:
+        - generic [ref=f6e67]: .
+        - generic [ref=f6e68]: .
+        - generic [ref=f6e69]: .
+  - alert [ref=f6e70]

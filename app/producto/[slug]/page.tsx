@@ -25,12 +25,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           name: product.name,
           description: product.description,
           price: product.price.toString(),
+          shippingPrice: product.shippingPrice?.toString() ?? null,
           images: product.images,
           category: product.category,
           variants: product.variants.map((v) => ({
             id: v.id,
             color: v.color,
             size: v.size,
+            stock: v.stock,
+            price: v.price?.toString() ?? null,
             imageUrl: v.imageUrl,
             images: v.images,
             description: v.description,
@@ -43,7 +46,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <h2 className="font-serif text-2xl">Te puede gustar en {product.category.name}</h2>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {sameCategory.map((p) => (
-              <ProductCard key={p.id} slug={p.slug} name={p.name} price={p.price.toString()} color={p.swatchColor} img={p.cover} />
+              <ProductCard
+                key={p.id}
+                slug={p.slug}
+                name={p.name}
+                price={p.price.toString()}
+                color={p.swatchColor}
+                img={p.cover}
+                hoverImg={p.hoverImage}
+              />
             ))}
           </div>
         </section>
@@ -54,7 +65,15 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           <h2 className="font-serif text-2xl">Recomendados</h2>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {recommended.map((p) => (
-              <ProductCard key={p.id} slug={p.slug} name={p.name} price={p.price.toString()} color={p.swatchColor} img={p.cover} />
+              <ProductCard
+                key={p.id}
+                slug={p.slug}
+                name={p.name}
+                price={p.price.toString()}
+                color={p.swatchColor}
+                img={p.cover}
+                hoverImg={p.hoverImage}
+              />
             ))}
           </div>
         </section>

@@ -4,6 +4,7 @@ export const checkoutSchema = z.object({
   contactName: z.string().min(2, "Nombre muy corto"),
   contactEmail: z.string().email("Email inválido"),
   contactPhone: z.string().min(7, "Teléfono inválido"),
+  contactAddress: z.string().min(5, "Dirección muy corta"),
   items: z
     .array(
       z.object({

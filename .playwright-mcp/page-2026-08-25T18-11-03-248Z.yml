@@ -1,0 +1,71 @@
+- generic:
+  - generic [active]:
+    - generic [ref=f27e3]:
+      - generic [ref=f27e4]:
+        - navigation [ref=f27e6]:
+          - button [disabled] [ref=f27e7]:
+            - img "previous" [ref=f27e8]
+          - generic [ref=f27e10]:
+            - generic [ref=f27e11]: 1/
+            - text: "1"
+          - button [disabled] [ref=f27e12]:
+            - img "next" [ref=f27e13]
+        - link "Next.js 16.2.7 (stale) Turbopack" [ref=f27e16] [cursor=pointer]:
+          - /url: https://nextjs.org/docs/messages/version-staleness
+          - generic "There is a newer version (16.3.3) available, upgrade recommended!" [ref=f27e19]: Next.js 16.2.7 (stale)
+          - generic [ref=f27e20]: Turbopack
+      - dialog "Build Error" [ref=f27e22]:
+        - generic [ref=f27e25]:
+          - generic [ref=f27e26]:
+            - generic [ref=f27e27]:
+              - generic [ref=f27e28]: Build Error
+              - generic [ref=f27e30]:
+                - button "Copy Error Info" [ref=f27e31] [cursor=pointer]
+                - button "No related documentation found" [disabled] [ref=f27e34]
+                - button "Attach Node.js inspector" [ref=f27e37] [cursor=pointer]
+            - generic [ref=f27e46]: Export bucketForKey doesn't exist in target module
+          - generic [ref=f27e49]:
+            - generic [ref=f27e51]:
+              - generic [ref=f27e57]: ./app/api/avatar/route.ts (2:1)
+              - button "Open in editor" [ref=f27e58] [cursor=pointer]
+            - generic [ref=f27e63]:
+              - generic [ref=f27e64]: Export
+              - text: bucketForKey
+              - generic [ref=f27e65]: doesn't exist in target module
+              - generic [ref=f27e66]: 1 |
+              - generic [ref=f27e67]: ...
+              - text: extResponse
+              - generic [ref=f27e68]: "}"
+              - text: from "next/server" >
+              - generic [ref=f27e69]: 2 |
+              - generic [ref=f27e70]: ...
+              - text: RIVATE_BUCKETS
+              - generic [ref=f27e71]: ", bucketForKey, getPublicUrl }"
+              - text: from "@/li...
+              - generic [ref=f27e72]: "|"
+              - text: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              - generic [ref=f27e73]: 3 |
+              - generic [ref=f27e74]: ...
+              - generic [ref=f27e75]: 4 |
+              - generic [ref=f27e76]: ...
+              - generic [ref=f27e77]: "e imágenes de storage. Solo sirve buckets públicos: rec..."
+              - generic [ref=f27e78]: 5 |
+              - generic [ref=f27e79]: ...
+              - generic [ref=f27e80]: buckets privados (DNI, documentos) para no depender so...
+              - generic [ref=f27e81]: The export
+              - text: bucketForKey
+              - generic [ref=f27e82]: was not found in module
+              - generic [ref=f27e83]: "[project]/lib/storage.ts [app-route] (ecmascript)"
+              - generic [ref=f27e84]: . Did you mean to import
+              - text: uploadFile
+              - generic [ref=f27e85]: "? All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist."
+        - generic [ref=f27e86]: "1"
+        - generic [ref=f27e87]: "2"
+    - generic [ref=f27e92] [cursor=pointer]:
+      - button "Open Next.js Dev Tools" [ref=f27e93]
+      - button "Open issues overlay" [ref=f27e98]:
+        - generic [ref=f27e99]:
+          - generic [ref=f27e100]: "0"
+          - generic [ref=f27e101]: "1"
+        - generic [ref=f27e102]: Issue
+  - alert [ref=f27e103]

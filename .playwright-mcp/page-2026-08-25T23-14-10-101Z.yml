@@ -1,0 +1,71 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e32]:
+    - complementary [ref=f6e33]:
+      - paragraph [ref=f6e34]: Panel Admin
+      - link "Productos" [ref=f6e35] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f6e39] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f6e45] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f6e50] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f6e54] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f6e60] [cursor=pointer]:
+        - /url: /
+    - main [ref=f6e61]:
+      - generic [ref=f6e227]:
+        - heading "Nuevo producto" [level=1] [ref=f6e228]
+        - generic [ref=f6e229]:
+          - generic [ref=f6e230]:
+            - heading "Datos del producto" [level=2] [ref=f6e232]
+            - generic [ref=f6e233]:
+              - generic [ref=f6e234]:
+                - generic [ref=f6e235]: Nombre
+                - textbox "Nombre" [ref=f6e236]:
+                  - /placeholder: Rebozo bordado a mano
+              - generic [ref=f6e237]:
+                - generic [ref=f6e238]: Precio en pesos
+                - spinbutton "Precio en pesos" [ref=f6e239]
+              - generic [ref=f6e240]:
+                - generic [ref=f6e241]: Precio de envío (opcional)
+                - spinbutton "Precio de envío (opcional)" [ref=f6e242]
+              - generic [ref=f6e243]:
+                - generic [ref=f6e244]: Categoría
+                - combobox [ref=f6e245]:
+                  - generic [ref=f6e246]: Accesorios
+                  - img: ▼
+                - textbox [ref=f6e247]: cmst3i8ku0003gkulcrl0sp6q
+              - generic [ref=f6e248]:
+                - generic [ref=f6e249]: Descripción
+                - textbox "Descripción" [ref=f6e250]:
+                  - /placeholder: "Contá cómo está hecho y con qué material. Ej: Rebozo tejido artesanalmente, flecos anudados a mano. Material: rayón."
+          - generic [ref=f6e251]:
+            - generic [ref=f6e252]:
+              - heading "Fotos del producto" [level=2] [ref=f6e253]
+              - paragraph [ref=f6e254]: La primera foto es la portada en la tienda. Podés subir varias y quitar las que no quieras.
+            - generic [ref=f6e255]:
+              - generic [ref=f6e256] [cursor=pointer]:
+                - generic [ref=f6e261]: Subir fotos
+                - generic [ref=f6e262]: Arrastrá los archivos acá o tocá para elegirlos del dispositivo.
+              - button "Subir fotos Arrastrá los archivos acá o tocá para elegirlos del dispositivo." [ref=f6e263]
+          - generic [ref=f6e264]:
+            - generic [ref=f6e265]:
+              - heading "Stock del producto estándar" [level=2] [ref=f6e266]
+              - paragraph [ref=f6e267]: El producto siempre se puede comprar tal cual, sin elegir color ni talla. Estas son sus piezas disponibles.
+            - generic [ref=f6e268]:
+              - generic [ref=f6e269]: Piezas disponibles
+              - spinbutton "Piezas disponibles" [ref=f6e270]: "0"
+          - generic [ref=f6e271]:
+            - generic [ref=f6e272]:
+              - heading "Colores y talles (opcional)" [level=2] [ref=f6e273]
+              - paragraph [ref=f6e274]: Además del estándar, podés sumar combinaciones de color/talla con su propio stock, fotos y precio.
+            - status [ref=f6e275]
+            - button "Agregar colores o talles" [ref=f6e276]
+          - generic [ref=f6e277]:
+            - button "Cancelar" [ref=f6e278]
+            - button "Guardar producto" [ref=f6e279]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e28] [cursor=pointer]
+  - alert [ref=f6e70]: Nuevo producto

@@ -59,7 +59,7 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
               key={p.id}
               href={`/producto/${p.slug}`}
               draggable={false}
-              className="group/item flex w-[60vw] shrink-0 flex-col gap-3 sm:w-[calc((100%-3rem)/4)]"
+              className="group/item flex w-[45vw] shrink-0 flex-col gap-3 sm:w-[calc((100%-4rem)/5)]"
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-cream">
                 {p.cover && (
@@ -68,7 +68,7 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
                     alt={p.name}
                     fill
                     className="object-cover transition-transform duration-500 group-hover/item:scale-105"
-                    sizes="(max-width: 640px) 60vw, 25vw"
+                    sizes="(max-width: 640px) 45vw, 20vw"
                   />
                 )}
               </div>

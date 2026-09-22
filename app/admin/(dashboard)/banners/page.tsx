@@ -39,13 +39,15 @@ export default async function AdminBannersPage() {
 
   return (
     <div className="flex flex-col gap-10">
-      <div className="flex items-center justify-between">
+      <div>
         <h1 className="font-serif text-2xl">Vitrina — Hero, flyers y banners</h1>
-        <BannerFormDialog trigger={<Button>Nueva imagen</Button>} />
       </div>
 
       <div className="flex flex-col gap-3">
-        <h2 className="text-sm font-medium text-foreground/60">Hero (slider principal)</h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-medium text-foreground/60">Hero (portada)</h2>
+          <BannerFormDialog fixedType="HERO" trigger={<Button size="sm">Nueva imagen</Button>} />
+        </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {hero.map((b) => (
             <BannerCard key={b.id} b={b} />
@@ -54,7 +56,10 @@ export default async function AdminBannersPage() {
       </div>
 
       <div className="flex flex-col gap-3">
-        <h2 className="text-sm font-medium text-foreground/60">Sección tradición (flyer izq. + banner centro + flyer der.)</h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-medium text-foreground/60">Sección tradición (flyer izq. + banner centro + flyer der.)</h2>
+          <BannerFormDialog trigger={<Button size="sm">Nueva imagen</Button>} />
+        </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {tradicion.map((b) => (
             <BannerCard key={b.id} b={b} />

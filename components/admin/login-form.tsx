@@ -56,7 +56,7 @@ export function AdminLoginForm() {
 
         <div className="absolute inset-0 flex items-center justify-center px-8 text-center">
           <Link href="/" className="transition-opacity hover:opacity-80">
-            <Image src="/logo.jpg" alt="Bahia 105W" width={140} height={140} className="rounded-lg" />
+            <Image src="/logo.png" alt="Bahia 105W" width={140} height={140} className="rounded-lg" />
           </Link>
         </div>
       </div>

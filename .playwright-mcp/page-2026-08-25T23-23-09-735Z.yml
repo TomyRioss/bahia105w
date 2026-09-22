@@ -1,0 +1,170 @@
+- generic [active] [ref=f25e1]:
+  - navigation [ref=f25e2]:
+    - generic [ref=f25e3]:
+      - link "ConectaTuProff" [ref=f25e4] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f25e6]:
+        - searchbox "¿Qué servicio estás buscando hoy?" [ref=f25e7]
+        - combobox [ref=f25e12]:
+          - option "Zona" [selected]
+        - button "Buscar con IA" [ref=f25e13]
+        - button "Buscar" [ref=f25e17]
+      - button "Explorar" [ref=f25e22]
+      - generic [ref=f25e25]:
+        - link "¿Sos profesional?" [ref=f25e26] [cursor=pointer]:
+          - /url: /profesional/login
+        - link "Busca ahora" [ref=f25e27] [cursor=pointer]:
+          - /url: /register
+  - main [ref=f25e28]:
+    - generic [ref=f25e32]:
+      - heading "Encontrá al profesional ideal para lo que necesitás." [level=1] [ref=f25e33]
+      - paragraph [ref=f25e34]: Bienestar, oficios y más — conectamos clientes con los mejores profesionales de CABA y GBA.
+      - generic [ref=f25e35]:
+        - textbox "¿Qué servicio buscás?" [ref=f25e40]
+        - textbox "Zona" [ref=f25e45]
+        - generic [ref=f25e46]:
+          - button "Buscar" [ref=f25e47]
+          - button "Buscar con IA" [ref=f25e48]
+      - generic [ref=f25e52]:
+        - generic [ref=f25e54]:
+          - button "Meditación y Mindfulness" [ref=f25e55]
+          - button "Yoga" [ref=f25e60]
+          - button "Ver todos" [ref=f25e66]
+        - button "Ver más categorías" [ref=f25e70]
+    - generic [ref=f25e74]:
+      - generic [ref=f25e75]:
+        - generic [ref=f25e76]:
+          - paragraph [ref=f25e77]: Explorá por rubro
+          - heading "¿Qué necesitás?" [level=2] [ref=f25e78]
+        - link "Ver todos →" [ref=f25e79] [cursor=pointer]:
+          - /url: /buscar
+      - generic [ref=f25e80]:
+        - generic [ref=f25e81]:
+          - link [ref=f25e82] [cursor=pointer]:
+            - /url: /buscar?categoria=bienestar
+            - img "Bienestar" [ref=f25e84]
+          - link "Bienestar" [ref=f25e85] [cursor=pointer]:
+            - /url: /buscar?categoria=bienestar
+          - list [ref=f25e86]:
+            - listitem [ref=f25e87]:
+              - link "Meditación y Mindfulness" [ref=f25e88] [cursor=pointer]:
+                - /url: /buscar?categoria=meditacion-mindfulness
+        - generic [ref=f25e89]:
+          - link [ref=f25e90] [cursor=pointer]:
+            - /url: /buscar?categoria=gimnasia-fitness
+            - img "Gimnasia y Fitness" [ref=f25e92]
+          - link "Gimnasia y Fitness" [ref=f25e93] [cursor=pointer]:
+            - /url: /buscar?categoria=gimnasia-fitness
+          - list [ref=f25e94]:
+            - listitem [ref=f25e95]:
+              - link "Yoga" [ref=f25e96] [cursor=pointer]:
+                - /url: /buscar?categoria=yoga
+    - generic [ref=f25e98]:
+      - generic [ref=f25e99]:
+        - generic [ref=f25e100]:
+          - paragraph [ref=f25e101]: Destacados
+          - heading "Profesionales verificados en tu zona" [level=2] [ref=f25e102]
+        - link "Ver todos →" [ref=f25e103] [cursor=pointer]:
+          - /url: /buscar
+      - link "Tomas Rios Tomas Rios Perfil Pro+ Meditación y Mindfulness Buenos Aires, Avellaneda 0 (1) Desde $2.500 Verificado" [ref=f25e105] [cursor=pointer]:
+        - /url: /perfil/profesional/tomyyyp
+        - generic [ref=f25e106]:
+          - img "Tomas Rios" [ref=f25e107]
+          - generic [ref=f25e108]:
+            - generic [ref=f25e109]:
+              - heading "Tomas Rios" [level=3] [ref=f25e110]
+              - generic [ref=f25e111]: Perfil Pro+
+            - paragraph [ref=f25e114]: Meditación y Mindfulness
+        - generic [ref=f25e115]:
+          - generic [ref=f25e116]: Buenos Aires, Avellaneda
+          - generic [ref=f25e121]:
+            - generic [ref=f25e124]: "0"
+            - generic [ref=f25e125]: (1)
+        - generic [ref=f25e126]:
+          - generic [ref=f25e127]:
+            - text: Desde
+            - paragraph [ref=f25e128]: $2.500
+          - generic [ref=f25e129]: Verificado
+    - generic [ref=f25e135]:
+      - generic [ref=f25e136]:
+        - paragraph [ref=f25e137]: Simple y rápido
+        - heading "¿Cómo funciona?" [level=2] [ref=f25e138]
+        - paragraph [ref=f25e139]: Conectamos clientes con profesionales en tres pasos simples. Sin complicaciones.
+      - generic [ref=f25e140]:
+        - generic [ref=f25e141]:
+          - generic [ref=f25e142]: "01"
+          - generic [ref=f25e143]: "01"
+          - heading "Elegí al profesional" [level=3] [ref=f25e144]
+          - paragraph [ref=f25e145]: Buscá por servicio, barrio y disponibilidad. Leé reseñas de otros clientes y elegí el que mejor se adapte a vos.
+        - generic [ref=f25e146]:
+          - generic [ref=f25e147]: "02"
+          - generic [ref=f25e148]: "02"
+          - heading "Coordiná el servicio" [level=3] [ref=f25e149]
+          - paragraph [ref=f25e150]: Solicitá un turno o hacé una consulta directamente desde el perfil. Recibís confirmación por email al instante.
+        - generic [ref=f25e151]:
+          - generic [ref=f25e152]: "03"
+          - generic [ref=f25e153]: "03"
+          - heading "Servicio completado" [level=3] [ref=f25e154]
+          - paragraph [ref=f25e155]: El profesional se presenta, hace su trabajo y vos dejás una reseña para ayudar a la comunidad.
+    - generic [ref=f25e159]:
+      - paragraph [ref=f25e160]: Para profesionales
+      - heading [level=2] [ref=f25e161]:
+        - text: ¿Sos experto entu oficio?
+        - generic [ref=f25e162]: Empezá a ofrecertus servicios.
+      - paragraph [ref=f25e163]: Unite a cientos de profesionales que ya usan Conecta Tu Proff para llegar a clientes en su zona. Sin costos de entrada.
+      - list [ref=f25e164]:
+        - listitem [ref=f25e165]: Perfil completo gratis para siempre
+        - listitem [ref=f25e169]: Primer mes Premium sin costo
+        - listitem [ref=f25e173]: Aparecé en búsquedas de CABA y GBA
+      - generic [ref=f25e177]:
+        - link "Crear perfil gratis" [ref=f25e178] [cursor=pointer]:
+          - /url: /registro/profesional
+        - link "Saber más" [ref=f25e181] [cursor=pointer]:
+          - /url: "#como-funciona"
+  - contentinfo [ref=f25e182]:
+    - generic [ref=f25e183]:
+      - generic [ref=f25e184]:
+        - generic [ref=f25e185]:
+          - paragraph [ref=f25e186]: ConectaTuProff
+          - paragraph [ref=f25e187]: Marketplace de profesionales en CABA y GBA. Bienestar, oficios y más.
+        - generic [ref=f25e188]:
+          - paragraph [ref=f25e189]: Plataforma
+          - list [ref=f25e190]:
+            - listitem [ref=f25e191]:
+              - link "Buscar profesionales" [ref=f25e192] [cursor=pointer]:
+                - /url: /buscar
+            - listitem [ref=f25e193]:
+              - link "Cómo funciona" [ref=f25e194] [cursor=pointer]:
+                - /url: /#como-funciona
+            - listitem [ref=f25e195]:
+              - link "Publicar servicio" [ref=f25e196] [cursor=pointer]:
+                - /url: /register/profesional
+        - generic [ref=f25e197]:
+          - paragraph [ref=f25e198]: Soporte
+          - list [ref=f25e199]:
+            - listitem [ref=f25e200]:
+              - link "Cómo funciona" [ref=f25e201] [cursor=pointer]:
+                - /url: /#como-funciona
+            - listitem [ref=f25e202]:
+              - link "Ingresar" [ref=f25e203] [cursor=pointer]:
+                - /url: /login
+            - listitem [ref=f25e204]:
+              - link "Quiero ser profesional" [ref=f25e205] [cursor=pointer]:
+                - /url: /register/profesional
+        - generic [ref=f25e206]:
+          - paragraph [ref=f25e207]: Registro
+          - list [ref=f25e208]:
+            - listitem [ref=f25e209]:
+              - link "Soy cliente" [ref=f25e210] [cursor=pointer]:
+                - /url: /register
+            - listitem [ref=f25e211]:
+              - link "Soy profesional" [ref=f25e212] [cursor=pointer]:
+                - /url: /register/profesional
+            - listitem [ref=f25e213]:
+              - link "Iniciar sesión" [ref=f25e214] [cursor=pointer]:
+                - /url: /login
+      - paragraph [ref=f25e216]: © 2026 ConectaTuProff. Todos los derechos reservados.
+  - button "Abrir asistente" [ref=f25e218]:
+    - generic [ref=f25e222]: Ayuda
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f25e228] [cursor=pointer]

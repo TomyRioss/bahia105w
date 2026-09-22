@@ -1,0 +1,114 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - complementary [ref=f5e3]:
+      - paragraph [ref=f5e4]: Panel Admin
+      - link "Productos" [ref=f5e5] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f5e9] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f5e15] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f5e20] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f5e24] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f5e30] [cursor=pointer]:
+        - /url: /
+    - main [ref=f5e31]:
+      - generic [ref=f5e32]:
+        - generic [ref=f5e33]:
+          - heading "Productos" [level=1] [ref=f5e34]
+          - link [ref=f5e35] [cursor=pointer]:
+            - /url: /admin/productos/nuevo
+            - button "Nuevo producto" [ref=f5e36]
+        - table [ref=f5e38]:
+          - rowgroup [ref=f5e39]:
+            - row [ref=f5e40]:
+              - columnheader "Imagen" [ref=f5e41]
+              - columnheader "Nombre" [ref=f5e42]
+              - columnheader "Categoría" [ref=f5e43]
+              - columnheader "Precio" [ref=f5e44]
+              - columnheader "Variantes" [ref=f5e45]
+              - columnheader "Stock total" [ref=f5e46]
+              - columnheader "Acciones" [ref=f5e47]
+          - rowgroup [ref=f5e48]:
+            - row [ref=f5e49]:
+              - cell [ref=f5e50]:
+                - img "Rebozo bordado a mano" [ref=f5e52]
+              - cell "Rebozo bordado a mano" [ref=f5e53]
+              - cell "Accesorios" [ref=f5e54]
+              - cell "$1,800.00" [ref=f5e55]
+              - cell "1" [ref=f5e56]
+              - cell "10" [ref=f5e57]
+              - cell [ref=f5e58]:
+                - link [ref=f5e59] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3iai3000kgkul96ajrgam/editar
+                  - button "Editar" [ref=f5e60]
+                - button "Eliminar" [ref=f5e61]
+            - row [ref=f5e62]:
+              - cell [ref=f5e63]:
+                - img "Huipil tradicional bordado" [ref=f5e65]
+              - cell "Huipil tradicional bordado" [ref=f5e66]
+              - cell "Huipiles" [ref=f5e67]
+              - cell "$3,950.00" [ref=f5e68]
+              - cell "1" [ref=f5e69]
+              - cell "8" [ref=f5e70]
+              - cell [ref=f5e71]:
+                - link [ref=f5e72] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3ia6m000igkul1zlyl4fe/editar
+                  - button "Editar" [ref=f5e73]
+                - button "Eliminar" [ref=f5e74]
+            - row [ref=f5e75]:
+              - cell [ref=f5e76]:
+                - img "Vestido Carlota fucsia" [ref=f5e78]
+              - cell "Vestido Carlota fucsia" [ref=f5e79]
+              - cell "Vestidos" [ref=f5e80]
+              - cell "$4,200.00" [ref=f5e81]
+              - cell "2" [ref=f5e82]
+              - cell "8" [ref=f5e83]
+              - cell [ref=f5e84]:
+                - link [ref=f5e85] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3i9uq000fgkultpmrt8cp/editar
+                  - button "Editar" [ref=f5e86]
+                - button "Eliminar" [ref=f5e87]
+            - row [ref=f5e88]:
+              - cell [ref=f5e89]:
+                - img "Blusa de lino blanco" [ref=f5e91]
+              - cell "Blusa de lino blanco" [ref=f5e92]
+              - cell "Blusas" [ref=f5e93]
+              - cell "$2,950.00" [ref=f5e94]
+              - cell "3" [ref=f5e95]
+              - cell "19" [ref=f5e96]
+              - cell [ref=f5e97]:
+                - link [ref=f5e98] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3i9j2000bgkulf5b0c3mc/editar
+                  - button "Editar" [ref=f5e99]
+                - button "Eliminar" [ref=f5e100]
+            - row [ref=f5e101]:
+              - cell [ref=f5e102]:
+                - img "Tunica de lino rosa palo" [ref=f5e104]
+              - cell "Tunica de lino rosa palo" [ref=f5e105]
+              - cell "Vestidos" [ref=f5e106]
+              - cell "$5,100.00" [ref=f5e107]
+              - cell "2" [ref=f5e108]
+              - cell "10" [ref=f5e109]
+              - cell [ref=f5e110]:
+                - link [ref=f5e111] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3i97e0008gkuly2xpy1rv/editar
+                  - button "Editar" [ref=f5e112]
+                - button "Eliminar" [ref=f5e113]
+            - row [ref=f5e114]:
+              - cell [ref=f5e115]:
+                - img "Vestido negro Carmen" [ref=f5e117]
+              - cell "Vestido negro Carmen" [ref=f5e118]
+              - cell "Vestidos" [ref=f5e119]
+              - cell "$5,100.00" [ref=f5e120]
+              - cell "3" [ref=f5e121]
+              - cell "13" [ref=f5e122]
+              - cell [ref=f5e123]:
+                - link [ref=f5e124] [cursor=pointer]:
+                  - /url: /admin/productos/cmst3i8vz0004gkulm970uqk9/editar
+                  - button "Editar" [ref=f5e125]
+                - button "Eliminar" [ref=f5e126]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f5e132] [cursor=pointer]

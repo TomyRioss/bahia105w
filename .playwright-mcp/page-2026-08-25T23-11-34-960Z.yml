@@ -1,0 +1,53 @@
+- generic [ref=f6e1]:
+  - generic [ref=f6e32]:
+    - complementary [ref=f6e33]:
+      - paragraph [ref=f6e34]: Panel Admin
+      - link "Productos" [active] [ref=f6e35] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f6e39] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f6e45] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f6e50] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f6e54] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f6e60] [cursor=pointer]:
+        - /url: /
+    - main [ref=f6e61]:
+      - generic [ref=f6e71]:
+        - generic [ref=f6e72]:
+          - heading "Productos" [level=1] [ref=f6e73]
+          - link [ref=f6e74] [cursor=pointer]:
+            - /url: /admin/productos/nuevo
+            - button "Nuevo producto" [ref=f6e75]
+        - table [ref=f6e77]:
+          - rowgroup [ref=f6e78]:
+            - row [ref=f6e79]:
+              - columnheader [ref=f6e80]
+              - columnheader "Imagen" [ref=f6e81]
+              - columnheader "Nombre" [ref=f6e82]
+              - columnheader "Categoría" [ref=f6e83]
+              - columnheader "Precio" [ref=f6e84]
+              - columnheader "Variantes" [ref=f6e85]
+              - columnheader "Stock total" [ref=f6e86]
+              - columnheader "Acciones" [ref=f6e87]
+          - rowgroup [ref=f6e88]:
+            - row [ref=f6e89]:
+              - cell [ref=f6e90]:
+                - button "Expandir variantes" [ref=f6e91]
+              - cell [ref=f6e94]:
+                - img "Vestido Tela Sintética" [ref=f6e96]
+              - cell "Vestido Tela Sintética" [ref=f6e97]
+              - cell "Vestidos" [ref=f6e98]
+              - cell "$8.000,0 MXN" [ref=f6e99]
+              - cell "2" [ref=f6e100]
+              - cell "19" [ref=f6e101]
+              - cell [ref=f6e102]:
+                - link [ref=f6e103] [cursor=pointer]:
+                  - /url: /admin/productos/cmt95g1t300002kulohcscpup/editar
+                  - button "Editar" [ref=f6e104]
+                - button "Eliminar" [ref=f6e105]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e28] [cursor=pointer]
+  - alert [ref=f6e70]: Bahia 105w — La belleza de la tradición, reinventada

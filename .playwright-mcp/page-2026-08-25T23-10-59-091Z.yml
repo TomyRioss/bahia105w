@@ -1,0 +1,21 @@
+- generic [active] [ref=f6e1]:
+  - generic [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - img "Bordado artesanal mexicano" [ref=f6e4]
+      - link [ref=f6e7] [cursor=pointer]:
+        - /url: /
+        - img "Bahia 105W" [ref=f6e8]
+    - generic [ref=f6e10]:
+      - paragraph [ref=f6e11]: PANEL ADMIN
+      - heading "Bienvenida de vuelta" [level=1] [ref=f6e12]
+      - paragraph [ref=f6e14]: Iniciá sesión para gestionar el catálogo y los pedidos.
+      - generic [ref=f6e15]:
+        - generic [ref=f6e16]:
+          - generic [ref=f6e17]: Email
+          - textbox "Email" [ref=f6e18]
+        - generic [ref=f6e19]:
+          - generic [ref=f6e20]: Contraseña
+          - textbox "Contraseña" [ref=f6e21]
+        - button "Iniciar sesión" [ref=f6e22]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f6e28] [cursor=pointer]

@@ -1,0 +1,36 @@
+- generic [active] [ref=f30e1]:
+  - generic [ref=f30e2]:
+    - complementary [ref=f30e3]:
+      - paragraph [ref=f30e4]: Panel Admin
+      - link "Productos" [ref=f30e5] [cursor=pointer]:
+        - /url: /admin/productos
+      - link "Categorías" [ref=f30e9] [cursor=pointer]:
+        - /url: /admin/categorias
+      - link "Vitrina" [ref=f30e15] [cursor=pointer]:
+        - /url: /admin/banners
+      - link "Pedidos" [ref=f30e20] [cursor=pointer]:
+        - /url: /admin/pedidos
+      - link "Usuarios" [ref=f30e24] [cursor=pointer]:
+        - /url: /admin/usuarios
+      - link "← Volver a la tienda" [ref=f30e30] [cursor=pointer]:
+        - /url: /
+    - main [ref=f30e31]:
+      - generic [ref=f30e32]:
+        - generic [ref=f30e33]:
+          - heading "Productos" [level=1] [ref=f30e34]
+          - link [ref=f30e35] [cursor=pointer]:
+            - /url: /admin/productos/nuevo
+            - button "Nuevo producto" [ref=f30e36]
+        - table [ref=f30e38]:
+          - rowgroup [ref=f30e39]:
+            - row [ref=f30e40]:
+              - columnheader "Imagen" [ref=f30e41]
+              - columnheader "Nombre" [ref=f30e42]
+              - columnheader "Categoría" [ref=f30e43]
+              - columnheader "Precio" [ref=f30e44]
+              - columnheader "Variantes" [ref=f30e45]
+              - columnheader "Stock total" [ref=f30e46]
+              - columnheader "Acciones" [ref=f30e47]
+          - rowgroup
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f30e53] [cursor=pointer]

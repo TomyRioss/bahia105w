@@ -9,15 +9,12 @@ export function getCategories() {
 }
 
 export async function getCategoriesWithThumbnail() {
-  const categories = await prisma.category.findMany({
-    orderBy: { name: "asc" },
-    include: { products: { take: 1, include: { variants: { take: 1 } } } },
-  });
+  const categories = await prisma.category.findMany({ orderBy: { name: "asc" } });
   return categories.map((c) => ({
     id: c.id,
     name: c.name,
     slug: c.slug,
-    thumbnail: c.products[0]?.images[0] ?? c.products[0]?.variants[0]?.imageUrl ?? null,
+    thumbnail: c.image,
   }));
 }
 
@@ -25,7 +22,7 @@ export async function getProductsWithCover(limit?: number) {
   const products = await prisma.product.findMany({
     take: limit,
     orderBy: { createdAt: "desc" },
-    include: { variants: { take: 1 }, category: true },
+    include: { variants: { take: 1, orderBy: { color: "desc" } }, category: true },
   });
   return products.map((p) => ({
     ...p,
@@ -41,14 +38,15 @@ export async function getProductsByCategory(slug: string) {
   const products = await prisma.product.findMany({
     where: { categoryId: category.id },
     orderBy: { createdAt: "desc" },
-    include: { variants: { take: 1 } },
+    include: { variants: { take: 1, orderBy: { color: "desc" } } },
   });
 
   return {
     category,
     products: products.map((p) => ({
       ...p,
-      cover: p.variants[0]?.imageUrl ?? null,
+      cover: p.images[0] ?? p.variants[0]?.imageUrl ?? null,
+      hoverImage: p.images[1] ?? p.variants[0]?.imageUrl ?? null,
       swatchColor: p.variants[0]?.color ?? null,
     })),
   };
@@ -63,7 +61,7 @@ export async function searchProducts(query: string) {
       ],
     },
     orderBy: { createdAt: "desc" },
-    include: { variants: { take: 1 } },
+    include: { variants: { take: 1, orderBy: { color: "desc" } } },
   });
   return products.map((p) => ({
     ...p,
@@ -75,7 +73,7 @@ export async function searchProducts(query: string) {
 export function getProductBySlug(slug: string) {
   return prisma.product.findUnique({
     where: { slug },
-    include: { variants: true, category: true },
+    include: { variants: { orderBy: { color: "asc" } }, category: true },
   });
 }
 
@@ -85,18 +83,19 @@ export async function getRelatedProducts(productId: string, categoryId: string) 
       where: { categoryId, id: { not: productId } },
       take: 4,
       orderBy: { createdAt: "desc" },
-      include: { variants: { take: 1 } },
+      include: { variants: { take: 1, orderBy: { color: "desc" } } },
     }),
     prisma.product.findMany({
       where: { id: { not: productId } },
       take: 4,
       orderBy: { createdAt: "desc" },
-      include: { variants: { take: 1 } },
+      include: { variants: { take: 1, orderBy: { color: "desc" } } },
     }),
   ]);
   const withCover = (p: (typeof sameCategory)[number]) => ({
     ...p,
-    cover: p.variants[0]?.imageUrl ?? null,
+    cover: p.images[0] ?? p.variants[0]?.imageUrl ?? null,
+    hoverImage: p.images[1] ?? p.variants[0]?.imageUrl ?? null,
     swatchColor: p.variants[0]?.color ?? null,
   });
   return { sameCategory: sameCategory.map(withCover), recommended: recommended.map(withCover) };

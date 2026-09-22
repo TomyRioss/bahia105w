@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const FooterMap = dynamic(() => import("./footer-map").then((m) => m.FooterMap), {
+  ssr: false,
+});
 
 export function SiteFooter() {
   return (
     <footer className="bg-cafe px-6 py-20 text-cream sm:px-10">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
-          <Image src="/logo.jpg" alt="Bahia 105W" width={72} height={72} className="rounded-md" />
+          <Image src="/logo.png" alt="Bahia 105W" width={72} height={72} className="rounded-md" />
           <p className="mt-2 text-sm">+52 981 171 7898</p>
           <p className="text-sm">hola@boutiquemex.mx</p>
         </div>
@@ -21,6 +28,12 @@ export function SiteFooter() {
           <p className="mb-1 font-medium">Legal</p>
           <a href="#">Aviso de privacidad</a>
           <a href="#">Envíos y devoluciones</a>
+        </div>
+        <div className="flex flex-col gap-2 text-sm">
+          <p className="mb-1 font-medium">Ubícanos</p>
+          <p>Lázaro Cárdenas 93, Zona Dorada</p>
+          <p>Horario: Lunes-Sábado 10am-6pm</p>
+          <FooterMap />
         </div>
       </div>
       <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 items-center gap-3 border-t border-cream/20 pt-6 text-xs text-cream/70 sm:grid-cols-3">

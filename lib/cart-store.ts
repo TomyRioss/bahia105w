@@ -9,6 +9,7 @@ export type CartItem = {
   color: string;
   size: string;
   imageUrl: string | null;
+  stock: number;
   quantity: number;
 };
 
@@ -30,11 +31,13 @@ export const useCartStore = create<CartState>()(
           if (existing) {
             return {
               items: state.items.map((i) =>
-                i.variantId === item.variantId ? { ...i, quantity: i.quantity + quantity } : i
+                i.variantId === item.variantId
+                  ? { ...i, stock: item.stock, quantity: Math.min(i.quantity + quantity, item.stock) }
+                  : i
               ),
             };
           }
-          return { items: [...state.items, { ...item, quantity }] };
+          return { items: [...state.items, { ...item, quantity: Math.min(quantity, item.stock) }] };
         }),
       remove: (variantId) =>
         set((state) => ({ items: state.items.filter((i) => i.variantId !== variantId) })),
@@ -43,7 +46,9 @@ export const useCartStore = create<CartState>()(
           items:
             quantity <= 0
               ? state.items.filter((i) => i.variantId !== variantId)
-              : state.items.map((i) => (i.variantId === variantId ? { ...i, quantity } : i)),
+              : state.items.map((i) =>
+                  i.variantId === variantId ? { ...i, quantity: Math.min(quantity, i.stock) } : i
+                ),
         })),
       clear: () => set({ items: [] }),
     }),
