@@ -27,23 +27,23 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           price: product.price.toString(),
           shippingPrice: product.shippingPrice?.toString() ?? null,
           images: product.images,
-          category: product.category,
+          category: product.category ?? { name: "Sin categoría" },
           variants: product.variants.map((v) => ({
             id: v.id,
             color: v.color,
             size: v.size,
             stock: v.stock,
             price: v.price?.toString() ?? null,
-            imageUrl: v.imageUrl,
+            imageUrl: v.imageUrl ?? null,
             images: v.images,
-            description: v.description,
+            description: v.description ?? null,
           })),
         }}
       />
 
       {sameCategory.length > 0 && (
         <section className="flex flex-col gap-6 px-6 py-10 sm:px-10">
-          <h2 className="font-serif text-2xl">Te puede gustar en {product.category.name}</h2>
+          <h2 className="font-serif text-2xl">Te puede gustar en {product.category?.name ?? ""}</h2>
           <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
             {sameCategory.map((p) => (
               <ProductCard

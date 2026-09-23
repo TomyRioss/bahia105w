@@ -1,8 +1,7 @@
 "use server";
 
-import bcrypt from "bcryptjs";
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc } from "@/lib/pocketbase";
 import { requireOwner } from "@/lib/actions/admin-guard";
 import { newAdminSchema } from "@/lib/validations/admin";
 
@@ -13,13 +12,17 @@ export async function createAdmin(input: unknown) {
 
   const { name, email, password } = parsed.data;
 
-  const existing = await prisma.user.findUnique({ where: { email } });
-  if (existing) return { error: "Ya existe un usuario con ese email." };
-
   try {
-    const hashed = await bcrypt.hash(password, 10);
-    await prisma.user.create({
-      data: { name, email, password: hashed, role: "ADMIN" },
+    const pb = await pbAdmin();
+    try {
+      await pb.collection("users").getFirstListItem(`email="${esc(email)}"`);
+      return { error: "Ya existe un usuario con ese email." };
+    } catch {
+      // No existe, seguir.
+    }
+    await pb.collection("users").create({
+      name, email, emailVisibility: true, verified: true,
+      password, passwordConfirm: password, role: "ADMIN",
     });
     revalidatePath("/admin/usuarios");
     return { ok: true };

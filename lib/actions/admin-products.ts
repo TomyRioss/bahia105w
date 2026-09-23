@@ -1,10 +1,10 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc, type PBVariant } from "@/lib/pocketbase";
 import { requireAdmin } from "@/lib/actions/admin-guard";
 import { productSchema } from "@/lib/validations/admin";
-import { uploadImage } from "@/lib/supabase";
+import { uploadImage } from "@/lib/pb-storage";
 
 export async function uploadProductFiles(formData: FormData) {
   await requireAdmin();
@@ -43,67 +43,42 @@ export async function saveProduct(input: unknown) {
   ];
 
   try {
+    const pb = await pbAdmin();
+    const toVariantData = (v: (typeof variants)[number]) => ({
+      color: v.color,
+      size: v.size,
+      stock: v.stock,
+      price: v.price ?? null,
+      imageUrl: v.imageUrl || null,
+      images: v.images,
+      description: v.description || null,
+    });
+
     if (id) {
       const keepIds = variants.filter((v) => v.id).map((v) => v.id!);
-      await prisma.$transaction([
-        prisma.product.update({
-          where: { id },
-          data: { name, slug, description, price, shippingPrice: shippingPrice ?? null, categoryId, images },
-        }),
-        prisma.productVariant.deleteMany({
-          where: { productId: id, id: { notIn: keepIds.length ? keepIds : ["__none__"] } },
-        }),
-        ...variants.map((v) =>
-          v.id
-            ? prisma.productVariant.update({
-                where: { id: v.id },
-                data: {
-                  color: v.color,
-                  size: v.size,
-                  stock: v.stock,
-                  price: v.price ?? null,
-                  imageUrl: v.imageUrl || null,
-                  images: v.images,
-                  description: v.description || null,
-                },
-              })
-            : prisma.productVariant.create({
-                data: {
-                  productId: id,
-                  color: v.color,
-                  size: v.size,
-                  stock: v.stock,
-                  price: v.price ?? null,
-                  imageUrl: v.imageUrl || null,
-                  images: v.images,
-                  description: v.description || null,
-                },
-              })
-        ),
-      ]);
-    } else {
-      await prisma.product.create({
-        data: {
-          name,
-          slug,
-          description,
-          price,
-          shippingPrice: shippingPrice ?? null,
-          categoryId,
-          images,
-          variants: {
-            create: variants.map((v) => ({
-              color: v.color,
-              size: v.size,
-              stock: v.stock,
-              price: v.price ?? null,
-              imageUrl: v.imageUrl || null,
-              images: v.images,
-              description: v.description || null,
-            })),
-          },
-        },
+      await pb.collection("products").update(id, {
+        name, slug, description, price, shippingPrice: shippingPrice ?? null, category: categoryId, images,
       });
+      const existing = await pb.collection("product_variants").getFullList<PBVariant>({
+        filter: `product="${esc(id)}"`,
+      });
+      for (const ev of existing) {
+        if (!keepIds.includes(ev.id)) await pb.collection("product_variants").delete(ev.id);
+      }
+      for (const v of variants) {
+        if (v.id) {
+          await pb.collection("product_variants").update(v.id, toVariantData(v));
+        } else {
+          await pb.collection("product_variants").create({ ...toVariantData(v), product: id });
+        }
+      }
+    } else {
+      const product = await pb.collection("products").create({
+        name, slug, description, price, shippingPrice: shippingPrice ?? null, category: categoryId, images,
+      });
+      for (const v of variants) {
+        await pb.collection("product_variants").create({ ...toVariantData(v), product: product.id });
+      }
     }
 
     revalidatePath("/admin/productos");
@@ -119,7 +94,8 @@ export async function saveProduct(input: unknown) {
 export async function deleteProduct(id: string) {
   await requireAdmin();
   try {
-    await prisma.product.delete({ where: { id } });
+    const pb = await pbAdmin();
+    await pb.collection("products").delete(id);
     revalidatePath("/admin/productos");
     revalidatePath("/");
     return { ok: true };
@@ -134,13 +110,11 @@ export async function updateVariantStock(variantId: string, stock: number) {
   if (!Number.isInteger(stock) || stock < 0) return { error: "Stock inválido." };
 
   try {
-    const variant = await prisma.productVariant.update({
-      where: { id: variantId },
-      data: { stock },
-      select: { product: { select: { slug: true } } },
-    });
+    const pb = await pbAdmin();
+    const variant = await pb.collection("product_variants").update(variantId, { stock });
+    const product = await pb.collection("products").getOne(variant.product as string);
     revalidatePath("/admin/productos");
-    revalidatePath(`/producto/${variant.product.slug}`);
+    revalidatePath(`/producto/${product.slug}`);
     return { ok: true };
   } catch (err) {
     console.error("[updateVariantStock]", err);

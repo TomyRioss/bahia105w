@@ -2,20 +2,27 @@
 
 import { revalidatePath } from "next/cache";
 import { auth } from "@/auth";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc } from "@/lib/pocketbase";
 
 export async function toggleFavorite(productId: string) {
   const session = await auth();
   if (!session?.user?.id) throw new Error("Necesitás iniciar sesión.");
+  const userId = session.user.id;
 
-  const existing = await prisma.favorite.findUnique({
-    where: { userId_productId: { userId: session.user.id, productId } },
-  });
+  const pb = await pbAdmin();
+  let existing: { id: string } | null = null;
+  try {
+    existing = await pb.collection("favorites").getFirstListItem<{ id: string }>(
+      `user="${esc(userId)}"&&product="${esc(productId)}"`,
+    );
+  } catch {
+    existing = null;
+  }
 
   if (existing) {
-    await prisma.favorite.delete({ where: { id: existing.id } });
+    await pb.collection("favorites").delete(existing.id);
   } else {
-    await prisma.favorite.create({ data: { userId: session.user.id, productId } });
+    await pb.collection("favorites").create({ user: userId, product: productId });
   }
 
   revalidatePath("/cuenta/favoritos");
@@ -25,8 +32,13 @@ export async function toggleFavorite(productId: string) {
 export async function isFavorited(productId: string) {
   const session = await auth();
   if (!session?.user?.id) return false;
-  const fav = await prisma.favorite.findUnique({
-    where: { userId_productId: { userId: session.user.id, productId } },
-  });
-  return !!fav;
+  const pb = await pbAdmin();
+  try {
+    await pb.collection("favorites").getFirstListItem(
+      `user="${esc(session.user.id)}"&&product="${esc(productId)}"`,
+    );
+    return true;
+  } catch {
+    return false;
+  }
 }

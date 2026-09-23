@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin } from "@/lib/pocketbase";
 import { requireAdmin } from "@/lib/actions/admin-guard";
 import { categorySchema } from "@/lib/validations/admin";
 
@@ -14,10 +14,12 @@ export async function saveCategory(input: unknown) {
   const id = (input as { id?: string }).id;
 
   try {
+    const pb = await pbAdmin();
+    const data = { name, slug, image: image || null };
     if (id) {
-      await prisma.category.update({ where: { id }, data: { name, slug, image: image || null } });
+      await pb.collection("categories").update(id, data);
     } else {
-      await prisma.category.create({ data: { name, slug, image: image || null } });
+      await pb.collection("categories").create(data);
     }
     revalidatePath("/admin/categorias");
     revalidatePath("/");
@@ -31,7 +33,8 @@ export async function saveCategory(input: unknown) {
 export async function deleteCategory(id: string) {
   await requireAdmin();
   try {
-    await prisma.category.delete({ where: { id } });
+    const pb = await pbAdmin();
+    await pb.collection("categories").delete(id);
     revalidatePath("/admin/categorias");
     revalidatePath("/");
     return { ok: true };

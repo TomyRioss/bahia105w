@@ -1,14 +1,20 @@
 import { notFound } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, type PBCategory, type PBProduct, type PBVariant } from "@/lib/pocketbase";
 import { ProductForm } from "@/components/admin/product-form";
 
 export default async function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const [product, categories] = await Promise.all([
-    prisma.product.findUnique({ where: { id }, include: { variants: true } }),
-    prisma.category.findMany({ orderBy: { name: "asc" } }),
+  const pb = await pbAdmin();
+  let product: PBProduct;
+  try {
+    product = await pb.collection("products").getOne<PBProduct>(id);
+  } catch {
+    notFound();
+  }
+  const [variants, categories] = await Promise.all([
+    pb.collection("product_variants").getFullList<PBVariant>({ filter: `product="${id}"` }),
+    pb.collection("categories").getFullList<PBCategory>({ sort: "name" }),
   ]);
-  if (!product) notFound();
 
   return (
     <div className="flex flex-col gap-6">
@@ -22,16 +28,16 @@ export default async function EditProductPage({ params }: { params: Promise<{ id
           description: product.description,
           price: product.price.toString(),
           shippingPrice: product.shippingPrice?.toString() ?? null,
-          categoryId: product.categoryId,
-          images: product.images,
-          variants: product.variants.map((v) => ({
+          categoryId: product.category,
+          images: product.images ?? [],
+          variants: variants.map((v) => ({
             id: v.id,
             color: v.color,
             size: v.size,
             stock: v.stock,
             price: v.price?.toString() ?? "",
             imageUrl: v.imageUrl ?? "",
-            images: v.images,
+            images: v.images ?? [],
             description: v.description ?? "",
           })),
         }}

@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc, type PBOrder, type PBOrderItem, type PBVariant } from "@/lib/pocketbase";
 import { SiteHeader } from "@/components/shop/site-header";
 import { SiteFooter } from "@/components/shop/site-footer";
 import { Badge } from "@/components/ui/badge";
@@ -16,11 +16,37 @@ export default async function OrdersPage() {
   const session = await auth();
   if (!session?.user?.id) redirect("/login");
 
-  const orders = await prisma.order.findMany({
-    where: { userId: session.user.id },
-    orderBy: { createdAt: "desc" },
-    include: { items: { include: { productVariant: { include: { product: true } } } } },
+  const pb = await pbAdmin();
+  const orders = await pb.collection("orders").getFullList<PBOrder>({
+    filter: `user="${esc(session.user.id)}"`,
+    sort: "-created",
   });
+  const itemsByOrder = new Map<string, PBOrderItem[]>();
+  if (orders.length > 0) {
+    const items = await pb.collection("order_items").getFullList<PBOrderItem>({
+      filter: orders.map((o) => `order="${esc(o.id)}"`).join("||"),
+    });
+    for (const it of items) {
+      const arr = itemsByOrder.get(it.order) ?? [];
+      arr.push(it);
+      itemsByOrder.set(it.order, arr);
+    }
+  }
+  const variantIds = [...new Set([...itemsByOrder.values()].flat().map((it) => it.variant))];
+  const variantMap = new Map<string, { color: string; size: string; productName: string }>();
+  if (variantIds.length > 0) {
+    const variants = await pb.collection("product_variants").getFullList<PBVariant>({
+      filter: variantIds.map((id) => `id="${esc(id)}"`).join("||"),
+      expand: "product",
+    });
+    for (const v of variants) {
+      variantMap.set(v.id, {
+        color: v.color,
+        size: v.size,
+        productName: (v.expand?.product as { name?: string } | undefined)?.name ?? "Producto",
+      });
+    }
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -38,15 +64,18 @@ export default async function OrdersPage() {
                   <Badge variant="secondary">{STATUS_LABEL[o.status]}</Badge>
                 </div>
                 <p className="text-xs text-foreground/50">
-                  {new Date(o.createdAt).toLocaleDateString("es-MX", { dateStyle: "long" })}
+                  {new Date(o.created).toLocaleDateString("es-MX", { dateStyle: "long" })}
                 </p>
                 <ul className="flex flex-col gap-1 text-sm text-foreground/70">
-                  {o.items.map((it) => (
-                    <li key={it.id}>
-                      {it.quantity}x {it.productVariant.product.name} ({it.productVariant.color},{" "}
-                      {it.productVariant.size})
-                    </li>
-                  ))}
+                  {(itemsByOrder.get(o.id) ?? []).map((it) => {
+                    const v = variantMap.get(it.variant);
+                    return (
+                      <li key={it.id}>
+                        {it.quantity}x {v?.productName ?? "Producto"} ({v?.color},{" "}
+                        {v?.size})
+                      </li>
+                    );
+                  })}
                 </ul>
                 <p className="text-sm font-medium">Total: {formatPrice(o.total.toString())}</p>
               </div>

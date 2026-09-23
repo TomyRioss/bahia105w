@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc, type PBVariant } from "@/lib/pocketbase";
 import { SiteHeader } from "@/components/shop/site-header";
 import { SiteFooter } from "@/components/shop/site-footer";
 import { ProductCard } from "@/components/shop/product-card";
@@ -9,11 +9,23 @@ export default async function FavoritesPage() {
   const session = await auth();
   if (!session?.user?.id) redirect("/login");
 
-  const favorites = await prisma.favorite.findMany({
-    where: { userId: session.user.id },
-    orderBy: { createdAt: "desc" },
-    include: { product: { include: { variants: { take: 1 } } } },
+  const pb = await pbAdmin();
+  const favorites = await pb.collection("favorites").getFullList({
+    filter: `user="${esc(session.user.id)}"`,
+    sort: "-created",
+    expand: "product",
   });
+  const productIds = favorites.map((f) => f.expand?.product?.id as string).filter(Boolean);
+  let variants: PBVariant[] = [];
+  if (productIds.length > 0) {
+    variants = await pb.collection("product_variants").getFullList<PBVariant>({
+      filter: productIds.map((id) => `product="${esc(id)}"`).join("||"),
+    });
+  }
+  const firstVariant = new Map<string, PBVariant>();
+  for (const v of variants) {
+    if (!firstVariant.has(v.product)) firstVariant.set(v.product, v);
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -24,16 +36,20 @@ export default async function FavoritesPage() {
           <p className="text-sm text-foreground/60">Todavía no guardaste productos.</p>
         ) : (
           <div className="grid w-full max-w-6xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {favorites.map((f) => (
-              <ProductCard
-                key={f.id}
-                slug={f.product.slug}
-                name={f.product.name}
-                price={f.product.price.toString()}
-                color={f.product.variants[0]?.color ?? null}
-                img={f.product.variants[0]?.imageUrl ?? null}
-              />
-            ))}
+            {favorites.map((f) => {
+              const p = f.expand?.product as { id: string; slug: string; name: string; price: number };
+              const v = firstVariant.get(p.id);
+              return (
+                <ProductCard
+                  key={f.id}
+                  slug={p.slug}
+                  name={p.name}
+                  price={p.price.toString()}
+                  color={v?.color ?? null}
+                  img={v?.imageUrl ?? null}
+                />
+              );
+            })}
           </div>
         )}
       </section>

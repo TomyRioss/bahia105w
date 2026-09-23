@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, type PBBanner } from "@/lib/pocketbase";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BannerFormDialog } from "@/components/admin/banner-form-dialog";
@@ -33,9 +33,11 @@ function BannerCard({ b }: { b: { id: string; type: string; imageUrl: string; ti
 }
 
 export default async function AdminBannersPage() {
-  const banners = await prisma.banner.findMany({ orderBy: [{ type: "asc" }, { order: "asc" }] });
-  const hero = banners.filter((b) => b.type === "HERO");
-  const tradicion = banners.filter((b) => b.type === "FLYER" || b.type === "BANNER");
+  const pb = await pbAdmin();
+  const banners = await pb.collection("banners").getFullList<PBBanner>({ sort: "type,order" });
+  const rows = banners.map((b) => ({ ...b, title: b.title ?? null }));
+  const hero = rows.filter((b) => b.type === "HERO");
+  const tradicion = rows.filter((b) => b.type === "FLYER" || b.type === "BANNER");
 
   return (
     <div className="flex flex-col gap-10">

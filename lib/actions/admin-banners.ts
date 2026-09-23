@@ -1,10 +1,10 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin } from "@/lib/pocketbase";
 import { requireAdmin } from "@/lib/actions/admin-guard";
 import { bannerSchema } from "@/lib/validations/admin";
-import { uploadImage } from "@/lib/supabase";
+import { uploadImage } from "@/lib/pb-storage";
 
 export async function uploadBannerFile(formData: FormData) {
   await requireAdmin();
@@ -28,6 +28,7 @@ export async function saveBanner(input: unknown) {
   const { id, type, imageUrl, videoUrlDesktop, videoUrlMobile, title, link, order } = parsed.data;
 
   try {
+    const pb = await pbAdmin();
     const data = {
       type,
       imageUrl,
@@ -38,9 +39,9 @@ export async function saveBanner(input: unknown) {
       order,
     };
     if (id) {
-      await prisma.banner.update({ where: { id }, data });
+      await pb.collection("banners").update(id, data);
     } else {
-      await prisma.banner.create({ data });
+      await pb.collection("banners").create(data);
     }
     revalidatePath("/admin/banners");
     revalidatePath("/");
@@ -54,7 +55,8 @@ export async function saveBanner(input: unknown) {
 export async function deleteBanner(id: string) {
   await requireAdmin();
   try {
-    await prisma.banner.delete({ where: { id } });
+    const pb = await pbAdmin();
+    await pb.collection("banners").delete(id);
     revalidatePath("/admin/banners");
     revalidatePath("/");
     return { ok: true };

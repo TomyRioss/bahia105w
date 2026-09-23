@@ -13,8 +13,12 @@ const nextConfig: NextConfig = {
         hostname: "images.pexels.com",
       },
       {
+        protocol: "http",
+        hostname: "153.75.247.241",
+      },
+      {
         protocol: "https",
-        hostname: "*.supabase.co",
+        hostname: "153.75.247.241",
       },
     ],
   },

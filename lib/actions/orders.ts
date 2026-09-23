@@ -1,7 +1,7 @@
 "use server";
 
 import { auth } from "@/auth";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc, type PBVariant } from "@/lib/pocketbase";
 import { sendNewOrderEmail } from "@/lib/email";
 import { checkoutSchema, type CheckoutInput } from "@/lib/validations/order";
 
@@ -15,43 +15,40 @@ export async function createOrder(input: CheckoutInput) {
   const session = await auth();
 
   try {
-    const variants = await prisma.productVariant.findMany({
-      where: { id: { in: items.map((i) => i.variantId) } },
-      select: { id: true, stock: true, product: { select: { name: true } } },
+    const pb = await pbAdmin();
+    const filter = items.map((i) => `id="${esc(i.variantId)}"`).join("||");
+    const variants = await pb.collection("product_variants").getFullList<PBVariant>({
+      filter: filter || 'id=""',
+      expand: "product",
     });
 
     for (const item of items) {
       const variant = variants.find((v) => v.id === item.variantId);
       if (!variant) return { error: "Uno de los productos ya no está disponible." };
       if (variant.stock < item.quantity) {
+        const name = (variant.expand?.product as { name?: string } | undefined)?.name ?? "El producto";
         return {
           error:
             variant.stock === 0
-              ? `${variant.product.name} está sin stock.`
-              : `Solo quedan ${variant.stock} unidades de ${variant.product.name}.`,
+              ? `${name} está sin stock.`
+              : `Solo quedan ${variant.stock} unidades de ${name}.`,
         };
       }
     }
 
     const total = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
 
-    const order = await prisma.order.create({
-      data: {
-        userId: session?.user?.id,
-        contactName,
-        contactEmail,
-        contactPhone,
-        contactAddress,
-        total,
-        items: {
-          create: items.map((i) => ({
-            productVariantId: i.variantId,
-            quantity: i.quantity,
-            price: i.price,
-          })),
-        },
-      },
+    const order = await pb.collection("orders").create({
+      user: session?.user?.id || null,
+      contactName, contactEmail, contactPhone, contactAddress,
+      status: "PENDIENTE", total,
     });
+
+    for (const i of items) {
+      await pb.collection("order_items").create({
+        order: order.id, variant: i.variantId, quantity: i.quantity, price: i.price,
+      });
+    }
 
     await sendNewOrderEmail({ id: order.id, contactName, contactEmail, contactPhone, contactAddress, total });
 

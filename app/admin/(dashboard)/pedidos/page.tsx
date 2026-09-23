@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc, type PBOrder, type PBOrderItem, type PBVariant } from "@/lib/pocketbase";
 import { OrderStatusSelect } from "@/components/admin/order-status-select";
 import { formatPrice } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -19,10 +19,44 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
 }
 
 export default async function AdminOrdersPage() {
-  const orders = await prisma.order.findMany({
-    orderBy: { createdAt: "desc" },
-    include: { items: { include: { productVariant: { include: { product: true } } } } },
-  });
+  const pb = await pbAdmin();
+  const pbOrders = await pb.collection("orders").getFullList<PBOrder>({ sort: "-created" });
+  const allItems = await pb.collection("order_items").getFullList<PBOrderItem>({});
+  const itemsByOrder = new Map<string, PBOrderItem[]>();
+  for (const it of allItems) {
+    const arr = itemsByOrder.get(it.order) ?? [];
+    arr.push(it);
+    itemsByOrder.set(it.order, arr);
+  }
+  const variantIds = [...new Set(allItems.map((it) => it.variant))];
+  const variantMap = new Map<string, PBVariant & { productName: string }>();
+  if (variantIds.length > 0) {
+    const variants = await pb.collection("product_variants").getFullList<PBVariant>({
+      filter: variantIds.map((id) => `id="${esc(id)}"`).join("||"),
+      expand: "product",
+    });
+    for (const v of variants) {
+      variantMap.set(v.id, {
+        ...v,
+        productName: (v.expand?.product as { name?: string } | undefined)?.name ?? "Producto",
+      });
+    }
+  }
+  const orders = pbOrders.map((o) => ({
+    ...o,
+    createdAt: o.created,
+    items: (itemsByOrder.get(o.id) ?? []).map((it) => {
+      const v = variantMap.get(it.variant);
+      return {
+        ...it,
+        productVariant: {
+          color: v?.color ?? "",
+          size: v?.size ?? "",
+          product: { name: v?.productName ?? "Producto" },
+        },
+      };
+    }),
+  }));
 
   return (
     <div className="flex flex-col gap-6">

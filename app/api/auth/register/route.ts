@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import bcrypt from "bcryptjs";
-import { prisma } from "@/lib/prisma";
+import { pbAdmin, esc } from "@/lib/pocketbase";
 import { registerSchema } from "@/lib/validations/auth";
 
 export async function POST(req: Request) {
@@ -12,13 +11,18 @@ export async function POST(req: Request) {
     }
     const { name, surname, email, password } = parsed.data;
 
-    const existing = await prisma.user.findUnique({ where: { email } });
-    if (existing) {
+    const pb = await pbAdmin();
+    try {
+      await pb.collection("users").getFirstListItem(`email="${esc(email)}"`);
       return NextResponse.json({ error: "Ese email ya está registrado." }, { status: 409 });
+    } catch {
+      // No existe, seguir.
     }
 
-    const hashed = await bcrypt.hash(password, 10);
-    await prisma.user.create({ data: { name, surname, email, password: hashed } });
+    await pb.collection("users").create({
+      name, surname, email, emailVisibility: true,
+      password, passwordConfirm: password, role: "USER",
+    });
 
     return NextResponse.json({ ok: true });
   } catch (err) {
