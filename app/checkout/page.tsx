@@ -12,7 +12,6 @@ import { Label } from "@/components/ui/label";
 import { useCartStore, cartTotal } from "@/lib/cart-store";
 import { formatPrice } from "@/lib/format";
 import { createOrder } from "@/lib/actions/orders";
-import { AddressAutocomplete } from "@/components/shop/address-autocomplete";
 
 export default function CheckoutPage() {
   const { data: session } = useSession();
@@ -21,7 +20,6 @@ export default function CheckoutPage() {
   const total = cartTotal(items);
   const router = useRouter();
   const [loading, setLoading] = useState(false);
-  const [address, setAddress] = useState("");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -31,12 +29,19 @@ export default function CheckoutPage() {
     }
     setLoading(true);
     const form = new FormData(e.currentTarget);
+    const street = String(form.get("street") ?? "");
+    const postalCode = String(form.get("postalCode") ?? "");
+    const municipality = String(form.get("municipality") ?? "");
+    const neighborhood = String(form.get("neighborhood") ?? "");
     try {
       const res = await createOrder({
         contactName: String(form.get("contactName") ?? ""),
         contactEmail: String(form.get("contactEmail") ?? ""),
         contactPhone: String(form.get("contactPhone") ?? ""),
-        contactAddress: String(form.get("contactAddress") ?? ""),
+        street,
+        postalCode,
+        municipality,
+        neighborhood,
         items: items.map((i) => ({ variantId: i.variantId, quantity: i.quantity, price: i.price })),
       });
       if (res.error) {
@@ -109,7 +114,30 @@ export default function CheckoutPage() {
                 <Label htmlFor="contactPhone">Teléfono</Label>
                 <Input id="contactPhone" name="contactPhone" type="tel" required />
               </div>
-              <AddressAutocomplete value={address} onChange={setAddress} />
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="street">Calle y número</Label>
+                <Input id="street" name="street" required placeholder="Calle y número" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="postalCode">Código postal</Label>
+                <Input
+                  id="postalCode"
+                  name="postalCode"
+                  required
+                  inputMode="numeric"
+                  maxLength={5}
+                  pattern="[0-9]{5}"
+                  placeholder="Código postal"
+                />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="municipality">Municipio / poblado</Label>
+                <Input id="municipality" name="municipality" required placeholder="Municipio o poblado" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <Label htmlFor="neighborhood">Colonia</Label>
+                <Input id="neighborhood" name="neighborhood" required placeholder="Colonia" />
+              </div>
 
               <Button type="submit" disabled={loading} size="lg" className="rounded-full">
                 Confirmar pedido

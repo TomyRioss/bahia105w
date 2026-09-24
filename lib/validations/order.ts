@@ -4,7 +4,11 @@ export const checkoutSchema = z.object({
   contactName: z.string().min(2, "Nombre muy corto"),
   contactEmail: z.string().email("Email inválido"),
   contactPhone: z.string().min(7, "Teléfono inválido"),
-  contactAddress: z.string().min(5, "Dirección muy corta"),
+  contactAddress: z.string().optional(),
+  street: z.string().min(3, "Calle y numero invalida"),
+  postalCode: z.string().regex(/^\d{5}$/, "Codigo postal invalido"),
+  municipality: z.string().min(2, "Municipio o poblado invalido"),
+  neighborhood: z.string().min(2, "Colonia invalida"),
   items: z
     .array(
       z.object({

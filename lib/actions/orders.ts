@@ -10,7 +10,8 @@ export async function createOrder(input: CheckoutInput) {
   if (!parsed.success) {
     return { error: parsed.error.issues[0].message };
   }
-  const { contactName, contactEmail, contactPhone, contactAddress, items } = parsed.data;
+  const { contactName, contactEmail, contactPhone, street, postalCode, municipality, neighborhood, items } = parsed.data;
+  const contactAddress = `Calle y numero: ${street}; C.P.: ${postalCode}; Municipio / poblado: ${municipality}; Colonia: ${neighborhood}`;
 
   const session = await auth();
 
