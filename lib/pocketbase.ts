@@ -12,6 +12,7 @@ function baseUrl() {
 
 let cachedToken = "";
 let cachedExp = 0;
+let authPromise: Promise<{ token: string; exp: number }> | null = null;
 
 export async function pbAdmin() {
   const pb = new PocketBase(baseUrl());
@@ -20,22 +21,37 @@ export async function pbAdmin() {
     pb.authStore.save(cachedToken);
     return pb;
   }
-  const email = process.env.POCKETBASE_SUPERUSER_EMAIL;
-  const password = process.env.POCKETBASE_SUPERUSER_PASSWORD;
-  if (!email || !password) throw new Error("Faltan credenciales de PocketBase en el entorno.");
-  const auth = await pb.collection("_superusers").authWithPassword(email, password);
-  cachedToken = auth.token;
-  try {
-    cachedExp = JSON.parse(Buffer.from(auth.token.split(".")[1], "base64").toString()).exp ?? 0;
-  } catch {
-    cachedExp = now + 12 * 3600;
+
+  if (!authPromise) {
+    authPromise = (async () => {
+      const email = process.env.POCKETBASE_SUPERUSER_EMAIL;
+      const password = process.env.POCKETBASE_SUPERUSER_PASSWORD;
+      if (!email || !password) throw new Error("Faltan credenciales de PocketBase en el entorno.");
+
+      const auth = await pb.collection("_superusers").authWithPassword(email, password);
+      let exp = now + 12 * 3600;
+      try {
+        exp = JSON.parse(Buffer.from(auth.token.split(".")[1], "base64").toString()).exp ?? exp;
+      } catch {
+        // Use the fallback expiration when the PocketBase token is not a JWT.
+      }
+      return { token: auth.token, exp };
+    })().finally(() => {
+      authPromise = null;
+    });
   }
+
+  const auth = await authPromise;
+  cachedToken = auth.token;
+  cachedExp = auth.exp;
+  pb.authStore.save(cachedToken);
   return pb;
 }
 
 export function clearPbCache() {
   cachedToken = "";
   cachedExp = 0;
+  authPromise = null;
 }
 
 /** Escapa un valor para interpolarlo en un filtro PB entre comillas dobles. */

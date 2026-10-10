@@ -46,11 +46,11 @@ export function ProductView({ product }: { product: Product }) {
           : [];
 
   const description = activeVariant?.description || product.description;
-  const displayPrice = activeVariant?.price || product.price;
+  const displayPrice = activeVariant?.price && Number(activeVariant.price) > 0 ? activeVariant.price : product.price;
 
   return (
     <section className="flex flex-col gap-10 px-6 py-12 sm:flex-row sm:justify-center sm:px-10">
-      <ProductGallery images={gallery} alt={product.name} />
+      <ProductGallery key={activeVariant?.id ?? product.id} images={gallery} alt={product.name} />
 
       <div className="flex w-full max-w-lg flex-col gap-6 sm:pt-10">
         <div>

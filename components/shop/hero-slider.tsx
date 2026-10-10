@@ -26,6 +26,7 @@ export function HeroSlider({ slides }: { slides: Slide[] }) {
         alt={slide.title ?? "Bahia 105w"}
         fill
         priority
+        sizes="100vw"
         className="object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-gradient-to-t from-black/70 via-black/30 to-black/40 text-center text-white">

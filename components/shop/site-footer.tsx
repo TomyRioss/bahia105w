@@ -14,8 +14,12 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex flex-col gap-3">
           <Image src="/logo.png" alt="Bahia 105W" width={72} height={72} className="rounded-md" />
-          <p className="mt-2 text-sm">+52 981 171 7898</p>
-          <p className="text-sm">hola@boutiquemex.mx</p>
+          <a href="https://wa.me/5213222942660" className="mt-2 text-sm hover:underline">
+            WhatsApp: +52 1 322 294 2660
+          </a>
+          <a href="mailto:hola@boutiquemex.mx" className="text-sm hover:underline">
+            hola@boutiquemex.mx
+          </a>
         </div>
         <div className="flex flex-col gap-2 text-sm">
           <p className="mb-1 font-medium">Tienda</p>

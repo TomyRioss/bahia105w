@@ -7,17 +7,12 @@ const sections = [
   {
     id: "nuestra-historia",
     title: "Nuestra historia",
-    body: "Somos Bahía 105W, un espacio dedicado a piezas hechas a mano. Diseño por artesanos de México y el mundo, para quienes buscan prendas únicas, con historia y con alma, lejos de la producción en serie.",
-  },
-  {
-    id: "el-proceso-artesanal",
-    title: "El proceso artesanal",
-    body: "Cada prenda está bordada a mano por artesanas mexicanas, punto por punto. Ninguna pieza es exactamente igual a otra: los tiempos, los colores y los detalles varían según la mano que la trabajó, lo que hace que cada compra sea también una pieza de coleccionista.",
+    body: "Bahía 105W inició en 2022 con la intención de dar a conocer el trabajo de artesanos y diseñadores mexicanos. Con el tiempo, descubrimos que diseñadores de distintas partes del mundo también tienen mucho que aportar a la moda y al concepto de nuestra tienda. Por eso ofrecemos una gran variedad de artículos que te sorprenderán y encantarán por su trabajo y calidad, y que te harán lucir bella y elegante.",
   },
   {
     id: "nuestro-compromiso",
     title: "Nuestro compromiso",
-    body: "Trabajamos de la mano con las artesanas para asegurar un pago justo por su trabajo y para mantener viva la tradición del bordado mexicano. Cada pieza que llevás con vos ayuda a sostener ese oficio.",
+    body: "Trabajamos de la mano con diseñadores y artesanos que cada día buscan sorprendernos con sus diseños y propuestas en el ámbito de la moda.",
   },
 ];
 

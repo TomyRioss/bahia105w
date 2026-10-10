@@ -33,7 +33,7 @@ export async function saveProduct(input: unknown) {
       id: standardVariantId,
       color: "",
       size: "Única",
-      stock: standardStock ?? 0,
+      stock: standardStock ?? 100,
       price: undefined,
       imageUrl: "",
       images: [],

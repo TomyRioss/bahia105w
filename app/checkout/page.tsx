@@ -125,8 +125,9 @@ export default function CheckoutPage() {
                   name="postalCode"
                   required
                   inputMode="numeric"
+                  minLength={4}
                   maxLength={5}
-                  pattern="[0-9]{5}"
+                  pattern="[0-9]{4,5}"
                   placeholder="Código postal"
                 />
               </div>

@@ -74,10 +74,10 @@ export function AddToCart({
       variantId: selected.id,
       productSlug,
       name: productName,
-      price: selected.price ? Number(selected.price) : price,
+      price: selected.price && Number(selected.price) > 0 ? Number(selected.price) : price,
       color: selected.color,
       size: selected.size,
-      imageUrl: selected.images?.[0] ?? selected.imageUrl ?? fallbackImage ?? null,
+      imageUrl: selected.images?.[0] || selected.imageUrl || fallbackImage || null,
       stock: selected.stock,
     }, quantity);
     setAdded(true);

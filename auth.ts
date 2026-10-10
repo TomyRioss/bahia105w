@@ -4,6 +4,7 @@ import Credentials from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 import PocketBase from "pocketbase";
 import { pbAdmin, esc, type PBUser } from "@/lib/pocketbase";
+import { rateLimit } from "@/lib/rate-limit";
 
 function pbPublic() {
   const url = process.env.POCKETBASE_URL;
@@ -21,7 +22,7 @@ async function findUserByEmail(email: string) {
 }
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  session: { strategy: "jwt" },
+  session: { strategy: "jwt", maxAge: 7 * 24 * 60 * 60, updateAge: 24 * 60 * 60 },
   providers: [
     Google({
       clientId: process.env.AUTH_GOOGLE_ID,
@@ -46,6 +47,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const email = credentials?.email as string | undefined;
         const password = credentials?.password as string | undefined;
         if (!email || !password) return null;
+        // Freno a fuerza bruta por cuenta (20 intentos / 10 min). Retorna null
+        // genérico para no revelar si la cuenta existe.
+        if (!rateLimit(`login:${email.toLowerCase()}`, 20, 10 * 60 * 1000)) return null;
 
         try {
           const pb = pbPublic();
@@ -113,7 +117,9 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.role = (user as { role?: string }).role;
         token.surname = (user as { surname?: string | null }).surname;
       }
-      if (!token.role && token.sub) {
+      // Refrescar rol en cada request: si un admin es degradado, pierde el acceso
+      // al renovarse la sesión en vez de conservarlo hasta que expire el JWT.
+      if (token.sub) {
         const pbUser = await findUserByEmail(token.email ?? "");
         const byId =
           pbUser ??

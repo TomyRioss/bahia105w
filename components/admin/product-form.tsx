@@ -47,7 +47,7 @@ const newVariant = (): Variant => ({
   uid: nextUid(),
   color: "",
   size: "",
-  stock: 0,
+  stock: 100,
   price: "",
   imageUrl: "",
   images: [],
@@ -91,7 +91,7 @@ export function ProductForm({
   const [variants, setVariants] = useState<Variant[]>(
     (product?.variants ?? []).filter((v) => v.color !== "").map((v) => ({ ...v, uid: nextUid() }))
   );
-  const [standardStock, setStandardStock] = useState<number>(baseVariant?.stock ?? 0);
+  const [standardStock, setStandardStock] = useState<number>(baseVariant?.stock ?? 100);
   const slug = product?.slug ?? slugify(name);
 
   function updateVariant(index: number, patch: Partial<Variant>) {

@@ -5,9 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
-import { FiSearch, FiUser, FiHeart, FiShoppingBag } from "react-icons/fi";
+import { FiSearch, FiUser, FiHeart, FiShoppingBag, FiMenu, FiX } from "react-icons/fi";
 import { useCartStore, cartCount } from "@/lib/cart-store";
 import { CartDrawer } from "@/components/shop/cart-drawer";
+import { LiveSearchResults } from "@/components/shop/live-search-results";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -29,6 +30,8 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
   const router = useRouter();
   const [scrolled, setScrolled] = useState(!overHero);
   const [query, setQuery] = useState("");
+  const [searchFocused, setSearchFocused] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [cartOpen, setCartOpen] = useState(false);
 
   useEffect(() => {
@@ -52,7 +55,7 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
       </div>
 
       <header
-        className={`flex items-center border-b px-6 py-4 transition-colors duration-500 ease-out sm:px-10 ${
+        className={`flex flex-wrap items-center border-b px-4 py-3 transition-colors duration-500 ease-out sm:flex-nowrap sm:px-10 sm:py-4 ${
           transparent ? "border-transparent bg-transparent" : "border-foreground/10 bg-background"
         }`}
       >
@@ -61,7 +64,14 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
           style={{ width: transparent ? "clamp(4.5rem, 8vw, 6.5rem)" : "3rem" }}
           className="relative aspect-square shrink-0 transition-[width] duration-500 ease-out"
         >
-          <Image src="/logo.png" alt="Bahia 105W" fill priority className="object-contain" />
+          <Image
+            src="/logo.png"
+            alt="Bahia 105W"
+            fill
+            priority
+            sizes="(min-width: 640px) 8vw, 72px"
+            className="object-contain"
+          />
         </Link>
         <nav
           style={{ flexGrow: transparent ? 0 : 1, marginLeft: transparent ? "2.5rem" : "0" }}
@@ -73,8 +83,12 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
             </Link>
           ))}
         </nav>
-        <div className={`ml-auto flex shrink-0 items-center gap-6 ${transparent ? "text-white" : ""}`}>
+        <div className={`ml-auto flex shrink-0 items-center gap-1 sm:gap-6 ${transparent ? "text-white" : ""}`}>
           <form
+            onFocus={() => setSearchFocused(true)}
+            onBlur={(e) => {
+              if (!e.currentTarget.contains(e.relatedTarget)) setSearchFocused(false);
+            }}
             onSubmit={(e) => {
               e.preventDefault();
               const q = query.trim();
@@ -92,12 +106,13 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Buscar..."
-              className={`w-72 rounded-full border bg-transparent py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:ring-1 ${
+              className={`w-72 border bg-transparent py-2.5 pl-10 pr-4 text-sm transition-[border-radius,background-color,border-color,box-shadow] duration-300 ease-out focus:outline-none focus:ring-1 ${
                 transparent
-                  ? "border-white/40 text-white placeholder:text-white/60 focus:ring-white/50"
-                  : "border-foreground/15 placeholder:text-foreground/40 focus:ring-foreground/30"
+                  ? `border-white/40 text-white placeholder:text-white/60 focus:ring-white/50 ${searchFocused && query ? "rounded-t-full rounded-b-none" : "rounded-full"}`
+                  : `border-foreground/15 placeholder:text-foreground/40 focus:ring-foreground/30 ${searchFocused && query ? "rounded-t-full rounded-b-none" : "rounded-full"}`
               }`}
             />
+            <LiveSearchResults query={query} visible={searchFocused && query.length > 0} />
           </form>
           {session?.user ? (
             <DropdownMenu>
@@ -136,7 +151,7 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
           <button
             onClick={() => setCartOpen(true)}
             aria-label="Bolsa"
-            className={`relative ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
+            className={`relative flex h-11 w-11 items-center justify-center ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
           >
             <FiShoppingBag className="h-5 w-5" />
             {count > 0 && (
@@ -145,7 +160,47 @@ export function SiteHeader({ overHero = false }: { overHero?: boolean }) {
               </span>
             )}
           </button>
+          <button
+            type="button"
+            aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+            className={`flex h-11 w-11 items-center justify-center sm:hidden ${transparent ? "text-white hover:text-white/70" : "text-foreground/80 hover:text-foreground"}`}
+          >
+            {menuOpen ? <FiX className="h-5 w-5" /> : <FiMenu className="h-5 w-5" />}
+          </button>
         </div>
+        <form
+          onFocus={() => setSearchFocused(true)}
+          onBlur={(e) => {
+            if (!e.currentTarget.contains(e.relatedTarget)) setSearchFocused(false);
+          }}
+          onSubmit={(e) => {
+            e.preventDefault();
+            const q = query.trim();
+            if (q) router.push(`/buscar?q=${encodeURIComponent(q)}`);
+          }}
+          className="relative order-last mt-3 w-full sm:hidden"
+        >
+          <FiSearch className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground/40" />
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Buscar prendas..."
+            className="w-full rounded-full border border-foreground/15 bg-transparent py-3 pl-10 pr-4 text-base focus:outline-none focus:ring-1 focus:ring-foreground/30"
+          />
+          <LiveSearchResults query={query} visible={searchFocused && query.length > 0} />
+        </form>
+        {menuOpen && (
+          <nav className={`order-last mt-3 flex w-full flex-col border-t pt-2 text-sm sm:hidden ${transparent ? "border-white/30 text-white" : "border-foreground/10"}`}>
+            {NAV.map((n) => (
+              <Link key={n.href} href={n.href} onClick={() => setMenuOpen(false)} className="flex min-h-11 items-center px-2">
+                {n.label}
+              </Link>
+            ))}
+          </nav>
+        )}
       </header>
       <CartDrawer open={cartOpen} onOpenChange={setCartOpen} />
     </div>

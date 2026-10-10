@@ -20,6 +20,9 @@ const ADMIN_WRITE = {
   deleteRule: '@request.auth.role = "ADMIN" || @request.auth.role = "OWNER"',
 };
 const PUBLIC_READ = { listRule: "", viewRule: "" };
+// Dueño del registro o admin/owner (para collections con campo `user`).
+const OWNER_OR_ADMIN_LIST =
+  "user = @request.auth.id || @request.auth.role = \"ADMIN\" || @request.auth.role = \"OWNER\"";
 
 async function ensure(def) {
   // En PB 0.40 created/updated son campos autodate explícitos: agregarlos siempre.
@@ -39,6 +42,10 @@ async function ensure(def) {
     if (e?.data?.data?.name?.code === "validation_collection_name_exists") {
       const c = await pb.collections.getOne(def.name);
       console.log("exists:", c.name);
+      // Aplicar rules vigentes a colecciones ya creadas (script idempotente).
+      const { listRule, viewRule, createRule, updateRule, deleteRule } = def;
+      await pb.collections.update(c.id, { listRule, viewRule, createRule, updateRule, deleteRule });
+      console.log("rules updated:", c.name);
       return c;
     }
     throw e;
@@ -55,7 +62,10 @@ await ensure({
     text("folder"),
   ],
   listRule: "", viewRule: "",
-  createRule: "@request.auth.id != ''",
+  // Solo admins suben/borran (la app lo hace vía superuser). Evita spam de
+  // archivos de 15MB por API directa. Lectura pública: las imágenes del
+  // storefront se sirven directo desde PB al browser.
+  createRule: ADMIN_WRITE.createRule,
   updateRule: ADMIN_WRITE.updateRule, deleteRule: ADMIN_WRITE.deleteRule,
 });
 
@@ -91,8 +101,10 @@ await ensure({
   name: "favorites", type: "base",
   fields: [rel("user", users.id, { required: true, cascadeDelete: true }), rel("product", products.id, { required: true, cascadeDelete: true })],
   indexes: ["CREATE UNIQUE INDEX idx_fav_user_product ON favorites (user, product)"],
-  listRule: "@request.auth.id != ''", viewRule: "@request.auth.id != ''",
-  createRule: "@request.auth.id != ''", updateRule: "@request.auth.id != ''", deleteRule: "@request.auth.id != ''",
+  // Cada usuario solo ve y toca sus propios favoritos (antes: cualquier
+  // autenticado listaba los de todos vía API directa a PB).
+  listRule: "user = @request.auth.id", viewRule: "user = @request.auth.id",
+  createRule: "@request.auth.id != ''", updateRule: "user = @request.auth.id", deleteRule: "user = @request.auth.id",
 });
 
 await ensure({
@@ -115,8 +127,11 @@ const orders = await ensure({
     sel("status", ["PENDIENTE", "CONFIRMADO", "COMPLETADO"]),
     num("total", { required: true }),
   ],
-  listRule: "@request.auth.id != ''", viewRule: "@request.auth.id != ''",
-  createRule: "", updateRule: ADMIN_WRITE.updateRule, deleteRule: ADMIN_WRITE.deleteRule,
+  // Dueño o admin/owner (antes: cualquier autenticado listaba TODOS los
+  // pedidos con PII vía API directa a PB). El checkout de invitados pasa por
+  // Next.js con superuser, así que no necesita createRule público.
+  listRule: OWNER_OR_ADMIN_LIST, viewRule: OWNER_OR_ADMIN_LIST,
+  createRule: "@request.auth.id != ''", updateRule: ADMIN_WRITE.updateRule, deleteRule: ADMIN_WRITE.deleteRule,
 });
 
 await ensure({
@@ -126,8 +141,10 @@ await ensure({
     rel("variant", variants.id, { required: true }),
     num("quantity", { required: true }), num("price", { required: true }),
   ],
+  // Sin creates anónimos (la app crea vía superuser). Items sueltos sin
+  // contacto no exponen PII, alcanza con exigir autenticación para leer.
   listRule: "@request.auth.id != ''", viewRule: "@request.auth.id != ''",
-  createRule: "", updateRule: ADMIN_WRITE.updateRule, deleteRule: ADMIN_WRITE.deleteRule,
+  createRule: "@request.auth.id != ''", updateRule: ADMIN_WRITE.updateRule, deleteRule: ADMIN_WRITE.deleteRule,
 });
 
 // Extender users: surname, role, image
@@ -135,6 +152,16 @@ const userFields = [...users.fields];
 for (const f of [text("surname"), sel("role", ["USER", "ADMIN", "OWNER"]), url("image")]) {
   if (!userFields.some((x) => x.name === f.name)) userFields.push(f);
 }
-await pb.collections.update(users.id, { fields: userFields });
+await pb.collections.update(users.id, {
+  fields: userFields,
+  // Auth collection blindada: nadie puede auto-escalarse el rol por API
+  // directa (un create/update con role=ADMIN quedaría como admin real).
+  // Todo el registro y la gestión pasan por Next.js con superuser.
+  listRule: ADMIN_WRITE.createRule,
+  viewRule: 'id = @request.auth.id || @request.auth.role = "ADMIN" || @request.auth.role = "OWNER"',
+  createRule: ADMIN_WRITE.createRule,
+  updateRule: ADMIN_WRITE.updateRule,
+  deleteRule: ADMIN_WRITE.deleteRule,
+});
 console.log("users extended OK");
 console.log("DONE");

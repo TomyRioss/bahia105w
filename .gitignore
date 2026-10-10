@@ -12,6 +12,7 @@
 
 # testing
 /coverage
+/dogfood-output/
 
 # next.js
 /.next/
@@ -47,3 +48,11 @@ next-env.d.ts
 /public/uploads
 
 docs/CREDENTIALS.md
+
+# Ruflo local secrets and runtime data
+.env
+.env.local
+.env.*.local
+.claude-flow/data/
+.claude-flow/logs/
+.claude-flow/sessions/

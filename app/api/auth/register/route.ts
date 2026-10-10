@@ -1,8 +1,13 @@
 import { NextResponse } from "next/server";
 import { pbAdmin, esc } from "@/lib/pocketbase";
+import { rateLimit } from "@/lib/rate-limit";
 import { registerSchema } from "@/lib/validations/auth";
 
 export async function POST(req: Request) {
+  const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (!rateLimit(`register:${ip}`, 5, 60 * 60 * 1000)) {
+    return NextResponse.json({ error: "Demasiados intentos. Probá más tarde." }, { status: 429 });
+  }
   try {
     const body = await req.json();
     const parsed = registerSchema.safeParse(body);

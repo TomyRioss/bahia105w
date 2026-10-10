@@ -177,11 +177,11 @@ export function LoginForm() {
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="reg-password">Contraseña</Label>
-              <PasswordInput id="reg-password" name="password" minLength={6} />
+              <PasswordInput id="reg-password" name="password" minLength={8} />
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor="reg-confirm-password">Confirmar contraseña</Label>
-              <PasswordInput id="reg-confirm-password" name="confirmPassword" minLength={6} />
+              <PasswordInput id="reg-confirm-password" name="confirmPassword" minLength={8} />
             </div>
             <Button type="submit" disabled={loading} className="rounded-full">
               Crear cuenta

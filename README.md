@@ -95,7 +95,7 @@ Si `NEXT_PUBLIC_SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY` no están configurad
 ## Panel de administración
 
 - URL: `/admin` (redirige a `/login` si no hay sesión con rol `ADMIN`).
-- Usuario de ejemplo creado por el seed: `admin@boutiquemex.mx` / `boutiquemex2026` — **cambiar la contraseña antes de producción** (o eliminar el usuario y crear uno nuevo actualizando el campo `role` a `ADMIN` en la tabla `User`).
+- Usuario admin inicial: crearlo con el seed (`scripts/seed.mjs` o el panel de PocketBase) y definir la contraseña por variable de entorno — nunca commitear credenciales reales.
 - **Productos**: alta/edición/baja, variantes por color y talla con stock individual, imagen por variante (URL).
 - **Categorías**: alta/edición/baja. El slug se usa en la URL (`/categoria/<slug>`).
 - **Vitrina**: gestión de imágenes del Hero (portada), Flyers y Banners promocionales, con orden y link opcional.

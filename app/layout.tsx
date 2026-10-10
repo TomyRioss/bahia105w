@@ -3,6 +3,7 @@ import { EB_Garamond, Public_Sans } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { Providers } from "@/components/providers";
 import { WhatsappButton } from "@/components/shop/whatsapp-button";
+import { IntroOverlay } from "@/components/shop/intro-overlay";
 import "./globals.css";
 
 const publicSans = Public_Sans({
@@ -27,10 +28,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
+      suppressHydrationWarning
       className={`${publicSans.variable} ${ebGaramond.variable} h-full antialiased`}
     >
+      <head />
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <Providers>
+          <IntroOverlay />
           {children}
           <WhatsappButton />
           <Toaster />

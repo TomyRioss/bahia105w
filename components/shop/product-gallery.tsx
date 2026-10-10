@@ -1,14 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 export function ProductGallery({ images, alt }: { images: string[]; alt: string }) {
   const [index, setIndex] = useState(0);
   const [zoomOrigin, setZoomOrigin] = useState("50% 50%");
   const [zoomed, setZoomed] = useState(false);
-
-  useEffect(() => setIndex(0), [images]);
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     const rect = e.currentTarget.getBoundingClientRect();

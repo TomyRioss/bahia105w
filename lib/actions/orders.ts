@@ -37,7 +37,20 @@ export async function createOrder(input: CheckoutInput) {
       }
     }
 
-    const total = items.reduce((sum, i) => sum + i.price * i.quantity, 0);
+    // Precio SIEMPRE desde la DB: el `price` del cliente se ignora (solo se
+    // acepta en el schema por compatibilidad). Evita pedidos con total $0.
+    const priced = items.map((item) => {
+      const variant = variants.find((v) => v.id === item.variantId);
+      const variantPrice = Number(variant?.price ?? 0);
+      const productPrice = Number((variant?.expand?.product as { price?: number } | undefined)?.price ?? 0);
+      const serverPrice = variantPrice > 0 ? variantPrice : productPrice;
+      return { item, serverPrice };
+    });
+    if (priced.some((p) => !p.serverPrice || p.serverPrice <= 0)) {
+      return { error: "Uno de los productos ya no tiene un precio válido." };
+    }
+
+    const total = priced.reduce((sum, p) => sum + (p.serverPrice ?? 0) * p.item.quantity, 0);
 
     const order = await pb.collection("orders").create({
       user: session?.user?.id || null,
@@ -45,9 +58,9 @@ export async function createOrder(input: CheckoutInput) {
       status: "PENDIENTE", total,
     });
 
-    for (const i of items) {
+    for (const p of priced) {
       await pb.collection("order_items").create({
-        order: order.id, variant: i.variantId, quantity: i.quantity, price: i.price,
+        order: order.id, variant: p.item.variantId, quantity: p.item.quantity, price: p.serverPrice,
       });
     }
 

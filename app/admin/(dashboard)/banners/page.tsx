@@ -10,7 +10,7 @@ function BannerCard({ b }: { b: { id: string; type: string; imageUrl: string; ti
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-foreground/10 p-3">
       <div className="relative aspect-video overflow-hidden bg-cream">
-        <Image src={b.imageUrl} alt={b.title ?? ""} fill className="object-cover" />
+        <Image src={b.imageUrl} alt={b.title ?? ""} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
       </div>
       <div className="flex items-center justify-between">
         <Badge variant="secondary">{b.type}</Badge>

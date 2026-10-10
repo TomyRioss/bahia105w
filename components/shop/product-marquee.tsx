@@ -6,7 +6,6 @@ import Link from "next/link";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { formatPrice } from "@/lib/format";
 
 type MarqueeProduct = {
   id: string;
@@ -34,7 +33,7 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
   if (products.length === 0) return null;
 
   return (
-    <div className="relative left-1/2 w-screen -translate-x-1/2 px-6 sm:px-20">
+    <div className="relative -ml-6 w-[calc(100%+3rem)] px-6 sm:left-1/2 sm:ml-0 sm:w-screen sm:-translate-x-1/2 sm:px-20">
       <button
         type="button"
         aria-label="Anterior"
@@ -73,7 +72,6 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
                 )}
               </div>
               <div className="flex flex-col gap-0.5">
-                <p className="text-sm">{formatPrice(p.price)}</p>
                 <p className="text-sm text-foreground/70">{p.name}</p>
               </div>
             </Link>

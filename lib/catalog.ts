@@ -72,13 +72,23 @@ export async function getCategories() {
   return cats.map(toCategory);
 }
 
+const FALLBACK_CATEGORY_IMAGES: Record<string, string> = {
+  accesorios: "https://images.pexels.com/photos/10050218/pexels-photo-10050218.jpeg?auto=compress&cs=tinysrgb&w=800",
+  blusas: "https://images.pexels.com/photos/18749882/pexels-photo-18749882.jpeg?auto=compress&cs=tinysrgb&w=800",
+  chamarras: "https://images.pexels.com/photos/10293141/pexels-photo-10293141.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "pantalones-y-shorts": "https://images.pexels.com/photos/16230601/pexels-photo-16230601.jpeg?auto=compress&cs=tinysrgb&w=800",
+  "precios-especiales": "https://images.pexels.com/photos/36730411/pexels-photo-36730411.jpeg?auto=compress&cs=tinysrgb&w=800",
+  huipiles: "https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=800",
+  vestidos: "https://images.pexels.com/photos/8538848/pexels-photo-8538848.jpeg?auto=compress&cs=tinysrgb&w=800",
+};
+
 export async function getCategoriesWithThumbnail() {
   const categories = await getCategories();
   return categories.map((c) => ({
     id: c.id,
     name: c.name,
     slug: c.slug,
-    thumbnail: c.image ?? null,
+    thumbnail: c.image?.trim() || FALLBACK_CATEGORY_IMAGES[c.slug] || null,
   }));
 }
 
@@ -139,13 +149,13 @@ export async function getProductsByCategory(slug: string) {
   };
 }
 
-export async function searchProducts(query: string) {
+export async function searchProducts(query: string, limit?: number) {
   const pb = await pbAdmin();
   const q = esc(query);
-  const products = await pb.collection("products").getFullList<PBProduct>({
-    filter: `name~"${q}"||description~"${q}"`,
-    sort: "-created",
-  });
+  const filter = `name~"${q}"||description~"${q}"`;
+  const products = limit
+    ? (await pb.collection("products").getList<PBProduct>(1, limit, { filter, sort: "-created" })).items
+    : await pb.collection("products").getFullList<PBProduct>({ filter, sort: "-created" });
   const variants = await variantsFor(products.map((p) => p.id));
   const byProduct = new Map<string, PBVariant[]>();
   for (const v of variants) {
@@ -183,16 +193,14 @@ export async function getProductBySlug(slug: string) {
 
 export async function getRelatedProducts(productId: string, categoryId: string) {
   const pb = await pbAdmin();
-  const [sameCategory, recommended] = await Promise.all([
-    pb.collection("products").getList<PBProduct>(1, 4, {
-      filter: `category="${esc(categoryId)}"&&id!="${esc(productId)}"`,
-      sort: "-created",
-    }),
-    pb.collection("products").getList<PBProduct>(1, 4, {
-      filter: `id!="${esc(productId)}"`,
-      sort: "-created",
-    }),
-  ]);
+  const sameCategory = await pb.collection("products").getList<PBProduct>(1, 4, {
+    filter: `category="${esc(categoryId)}"&&id!="${esc(productId)}"`,
+    sort: "-created",
+  });
+  const recommended = await pb.collection("products").getList<PBProduct>(1, 4, {
+    filter: `id!="${esc(productId)}"`,
+    sort: "-created",
+  });
   const all = [...sameCategory.items, ...recommended.items];
   const variants = await variantsFor(all.map((p) => p.id));
   const byProduct = new Map<string, PBVariant[]>();

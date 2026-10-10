@@ -44,7 +44,6 @@ export function AddressAutocomplete({
     }
     const query = value.trim();
     if (query.length < 4) {
-      setSuggestions([]);
       return;
     }
 
@@ -95,7 +94,14 @@ export function AddressAutocomplete({
           required
           autoComplete="off"
           value={value}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={(e) => {
+            const next = e.target.value;
+            onChange(next);
+            if (next.trim().length < 4) {
+              setSuggestions([]);
+              setOpen(false);
+            }
+          }}
           onFocus={() => suggestions.length > 0 && setOpen(true)}
           placeholder="Calle, número, colonia, ciudad"
         />

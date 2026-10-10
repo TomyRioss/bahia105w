@@ -6,7 +6,6 @@ export function ProductCard({
   slug,
   name,
   price,
-  color,
   img,
   hoverImg,
 }: {

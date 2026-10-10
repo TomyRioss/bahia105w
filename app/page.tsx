@@ -33,7 +33,7 @@ export default async function Home() {
         videoUrlMobile={hero?.videoUrlMobile}
         poster={hero?.imageUrl}
         title={hero?.title}
-        link={hero?.link}
+        link="/categorias"
       />
 
       <section className="flex flex-col items-center gap-10 bg-cream px-6 py-20 sm:px-10">
@@ -74,12 +74,24 @@ export default async function Home() {
         <section className="grid grid-cols-1 sm:grid-cols-3">
           {flyerLeft && (
             <div className="relative aspect-square">
-              <Image src={flyerLeft.imageUrl} alt={flyerLeft.title ?? ""} fill className="object-cover" />
+              <Image
+                src={flyerLeft.imageUrl}
+                alt={flyerLeft.title ?? ""}
+                fill
+                sizes="(min-width: 640px) 33vw, 100vw"
+                className="object-cover"
+              />
             </div>
           )}
           {centerBanner && (
             <div className="relative flex aspect-square items-center justify-center">
-              <Image src={centerBanner.imageUrl} alt={centerBanner.title ?? ""} fill className="object-cover" />
+              <Image
+                src={centerBanner.imageUrl}
+                alt={centerBanner.title ?? ""}
+                fill
+                sizes="(min-width: 640px) 33vw, 100vw"
+                className="object-cover"
+              />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/30 text-center text-white">
                 {centerBanner.title && <p className="max-w-xs font-serif text-2xl">{centerBanner.title}</p>}
                 {centerBanner.link && (
@@ -92,19 +104,39 @@ export default async function Home() {
           )}
           {flyerRight && (
             <div className="relative aspect-square">
-              <Image src={flyerRight.imageUrl} alt={flyerRight.title ?? ""} fill className="object-cover" />
+              <Image
+                src={flyerRight.imageUrl}
+                alt={flyerRight.title ?? ""}
+                fill
+                sizes="(min-width: 640px) 33vw, 100vw"
+                className="object-cover"
+              />
             </div>
           )}
         </section>
       )}
 
-      <section className="flex flex-col items-center gap-10 bg-cream px-6 py-20 text-center sm:px-10">
-        <div className="flex flex-col items-center gap-2">
+      <section className="flex flex-col items-center gap-8 bg-cream px-6 py-20 text-center sm:px-10">
+        <div className="flex w-full max-w-3xl flex-col items-center gap-6">
           <h2 className="font-serif text-3xl">¿Quiénes somos?</h2>
-          <p className="max-w-xl text-sm text-foreground/70">
-            Somos Bahía 105W, un espacio dedicado a piezas hechas a mano. Diseño por artesanos de México y el Mundo,
-            celebrando la tradición y el trabajo manual detrás de cada diseño.
-          </p>
+          <div className="flex flex-col gap-5 text-sm leading-relaxed text-foreground/70">
+            <div className="flex flex-col gap-2">
+              <h3 className="font-serif text-xl text-foreground">Nuestra historia</h3>
+              <p>
+                Bahía 105W inició en 2022 con la intención de dar a conocer el trabajo de artesanos y diseñadores
+                mexicanos. Con el tiempo, descubrimos que diseñadores de distintas partes del mundo también tienen
+                mucho que aportar a la moda y al concepto de nuestra tienda. Por eso ofrecemos una gran variedad de
+                artículos que te sorprenderán y encantarán por su trabajo y calidad, y que te harán lucir bella y elegante.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h3 className="font-serif text-xl text-foreground">Nuestro compromiso</h3>
+              <p>
+                Trabajamos de la mano con diseñadores y artesanos que cada día buscan sorprendernos con sus diseños y
+                propuestas en el ámbito de la moda.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <Link
@@ -146,7 +178,7 @@ export default async function Home() {
         <div className="flex flex-col items-center gap-2">
           <FaWhatsapp className="h-6 w-6 text-[#25D366]" />
           <p className="font-medium">WhatsApp</p>
-          <p className="max-w-xs text-sm text-foreground/70">Contáctanos para más información.</p>
+          <p className="max-w-xs text-sm text-foreground/70">Contáctanos por WhatsApp para más información.</p>
         </div>
       </section>
       </main>

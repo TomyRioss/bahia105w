@@ -52,7 +52,9 @@ export function CartDrawer({
               {items.map((item) => (
                 <div key={item.variantId} className="flex items-center gap-4 border-b border-foreground/10 pb-4">
                   <div className="relative h-24 w-20 shrink-0 overflow-hidden bg-cream">
-                    {item.imageUrl && <Image src={item.imageUrl} alt={item.name} fill className="object-cover" />}
+                    {item.imageUrl && (
+                      <Image src={item.imageUrl} alt={item.name} fill sizes="80px" className="object-cover" />
+                    )}
                   </div>
                   <div className="flex flex-1 flex-col gap-1">
                     <p className="text-sm font-medium">{item.name}</p>
