@@ -17,23 +17,28 @@ export function ProductCard({
   hoverImg?: string | null;
 }) {
   return (
-    <Link href={`/producto/${slug}`} className="group flex flex-col gap-3">
-      <div className="relative aspect-[3/4] overflow-hidden bg-cream">
+    <Link href={`/producto/${slug}`} className="group flex flex-col gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cafe">
+      <div className="relative aspect-[3/4] overflow-hidden bg-white">
+        {!img && (
+          <p className="flex h-full items-center justify-center px-4 text-center text-sm text-foreground/70">
+            Imagen no disponible
+          </p>
+        )}
         {img && (
           <Image
             src={img}
             alt={name}
             fill
-            className="object-cover transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-0 group-hover:blur-sm"
+            className={`object-contain transition-opacity duration-500 ease-out motion-reduce:transition-none ${hoverImg ? "group-hover:opacity-0 group-focus-visible:opacity-0" : ""}`}
             sizes="(max-width: 768px) 50vw, 25vw"
           />
         )}
         {hoverImg && (
           <Image
             src={hoverImg}
-            alt={name}
+            alt={`${name} en modelo`}
             fill
-            className="object-cover opacity-0 blur-sm transition-all duration-500 ease-out group-hover:scale-105 group-hover:opacity-100 group-hover:blur-none"
+            className="object-cover opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none"
             sizes="(max-width: 768px) 50vw, 25vw"
           />
         )}

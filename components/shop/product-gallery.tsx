@@ -16,7 +16,11 @@ export function ProductGallery({ images, alt }: { images: string[]; alt: string 
   }
 
   if (images.length === 0) {
-    return <div className="relative aspect-[9/16] max-h-[80vh] overflow-hidden bg-cream" />;
+    return (
+      <div className="flex aspect-[9/16] max-h-[80vh] items-center justify-center bg-cream px-6 text-sm text-foreground/70">
+        Imagen no disponible
+      </div>
+    );
   }
 
   return (

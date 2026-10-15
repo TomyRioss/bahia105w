@@ -25,7 +25,6 @@ export function SiteFooter() {
           <p className="mb-1 font-medium">Tienda</p>
           <Link href="/tienda/vestidos">Vestidos</Link>
           <Link href="/tienda/blusas">Blusas</Link>
-          <Link href="/tienda/huipiles">Huipiles</Link>
           <Link href="/tienda/accesorios">Accesorios</Link>
         </div>
         <div className="flex flex-col gap-2 text-sm">

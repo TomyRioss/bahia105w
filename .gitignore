@@ -56,3 +56,55 @@ docs/CREDENTIALS.md
 .claude-flow/data/
 .claude-flow/logs/
 .claude-flow/sessions/
+
+# Local agent tools and runtime files
+/.agents/
+/.claude/
+/.claude-flow/
+/.codex/
+/.cursor/
+/.windsurf/
+/.swarm/
+/.mcp.json
+
+# Local work files and catalog source archive
+/.local/
+/Fotos_catalogo_Bahia.zip
+
+# Browser QA artifacts and reports
+/.playwright-cli/
+/.playwright-mcp/
+/test-results/
+/playwright-report/
+/blob-report/
+/search-no-clear.png
+
+# Runtime logs
+*.log
+
+# Temporary files, caches and editor backups
+/tmp/
+/temp/
+/.tmp/
+/.temp/
+.cache/
+.eslintcache
+.stylelintcache
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.swp
+*.swo
+*~
+Thumbs.db
+Desktop.ini
+
+# Additional browser QA artifacts
+/del1.yml
+/test-results-*/
+/playwright/.cache/
+/playwright/.auth/
+/nyc_output/
+/.nyc_output/

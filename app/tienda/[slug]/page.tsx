@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { SiteHeader } from "@/components/shop/site-header";
 import { SiteFooter } from "@/components/shop/site-footer";
 import { ProductCard } from "@/components/shop/product-card";
@@ -16,6 +16,7 @@ export const revalidate = 60;
 
 export default async function CategoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
+  if (slug === "huipiles") redirect("/tienda/vestidos");
   const data = await getProductsByCategory(slug);
   if (!data) notFound();
 

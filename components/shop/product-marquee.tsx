@@ -57,8 +57,9 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
             <Link
               key={p.id}
               href={`/producto/${p.slug}`}
+              aria-label={p.name}
               draggable={false}
-              className="group/item flex w-[45vw] shrink-0 flex-col gap-3 sm:w-[calc((100%-4rem)/5)]"
+              className="group/item block w-[45vw] shrink-0 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-cafe sm:w-[calc((100%-4rem)/5)]"
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-cream">
                 {p.cover && (
@@ -66,13 +67,10 @@ export function ProductMarquee({ products }: { products: MarqueeProduct[] }) {
                     src={p.cover}
                     alt={p.name}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover/item:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover/item:scale-105 motion-reduce:transform-none motion-reduce:transition-none"
                     sizes="(max-width: 640px) 45vw, 20vw"
                   />
                 )}
-              </div>
-              <div className="flex flex-col gap-0.5">
-                <p className="text-sm text-foreground/70">{p.name}</p>
               </div>
             </Link>
           ))}

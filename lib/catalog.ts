@@ -1,4 +1,5 @@
 import { pbAdmin, esc, type PBCategory, type PBProduct, type PBVariant, type PBBanner } from "@/lib/pocketbase";
+import { availableProductImage, productCardImages } from "@/lib/product-images";
 
 // Capa de compatibilidad: devuelve objetos con la misma forma que Prisma
 // para no tocar las páginas. createdAt como Date, categoryId/productId,
@@ -26,7 +27,12 @@ export function toCategory(c: PBCategory): CategoryRow {
 
 export function toVariant(v: PBVariant): VariantRow {
   const { product, ...rest } = v;
-  return { ...rest, productId: product, images: v.images ?? [] };
+  return {
+    ...rest,
+    productId: product,
+    imageUrl: availableProductImage(v.imageUrl) ?? "",
+    images: (v.images ?? []).filter((image) => availableProductImage(image) !== null),
+  };
 }
 
 export function toProduct(
@@ -37,7 +43,7 @@ export function toProduct(
   const { category: catId, created, ...rest } = p;
   return {
     ...rest,
-    images: p.images ?? [],
+    images: (p.images ?? []).filter((image) => availableProductImage(image) !== null),
     categoryId: catId,
     createdAt: new Date(created),
     category: category ? toCategory(category) : undefined,
@@ -69,7 +75,7 @@ export async function getBanners(type: "HERO" | "FLYER" | "BANNER") {
 export async function getCategories() {
   const pb = await pbAdmin();
   const cats = await pb.collection("categories").getFullList<PBCategory>({ sort: "name" });
-  return cats.map(toCategory);
+  return cats.filter((c) => c.slug !== "huipiles").map(toCategory);
 }
 
 const FALLBACK_CATEGORY_IMAGES: Record<string, string> = {
@@ -78,7 +84,6 @@ const FALLBACK_CATEGORY_IMAGES: Record<string, string> = {
   chamarras: "https://images.pexels.com/photos/10293141/pexels-photo-10293141.jpeg?auto=compress&cs=tinysrgb&w=800",
   "pantalones-y-shorts": "https://images.pexels.com/photos/16230601/pexels-photo-16230601.jpeg?auto=compress&cs=tinysrgb&w=800",
   "precios-especiales": "https://images.pexels.com/photos/36730411/pexels-photo-36730411.jpeg?auto=compress&cs=tinysrgb&w=800",
-  huipiles: "https://images.pexels.com/photos/994523/pexels-photo-994523.jpeg?auto=compress&cs=tinysrgb&w=800",
   vestidos: "https://images.pexels.com/photos/8538848/pexels-photo-8538848.jpeg?auto=compress&cs=tinysrgb&w=800",
 };
 
@@ -88,7 +93,9 @@ export async function getCategoriesWithThumbnail() {
     id: c.id,
     name: c.name,
     slug: c.slug,
-    thumbnail: c.image?.trim() || FALLBACK_CATEGORY_IMAGES[c.slug] || null,
+    thumbnail: c.slug === "vestidos"
+      ? FALLBACK_CATEGORY_IMAGES.vestidos
+      : c.image?.trim() || FALLBACK_CATEGORY_IMAGES[c.slug] || null,
   }));
 }
 
@@ -109,7 +116,7 @@ export async function getProductsWithCover(limit?: number) {
     const row = toProduct(p, vs, p.expand?.category as PBCategory | undefined);
     return {
       ...row,
-      cover: row.images[0] ?? vs[0]?.imageUrl ?? null,
+      ...productCardImages(p.images ?? [], vs[0]),
       swatchColor: vs[0]?.color ?? null,
     };
   });
@@ -124,7 +131,9 @@ export async function getProductsByCategory(slug: string) {
     return null;
   }
   const products = await pb.collection("products").getFullList<PBProduct>({
-    filter: `category="${category.id}"`,
+    filter: slug === "vestidos"
+      ? '(category.slug="vestidos"||category.slug="huipiles")'
+      : `category="${category.id}"`,
     sort: "-created",
   });
   const variants = await variantsFor(products.map((p) => p.id));
@@ -141,8 +150,7 @@ export async function getProductsByCategory(slug: string) {
       const row = toProduct(p, vs);
       return {
         ...row,
-        cover: row.images[0] ?? vs[0]?.imageUrl ?? null,
-        hoverImage: row.images[1] ?? vs[0]?.imageUrl ?? null,
+        ...productCardImages(p.images ?? [], vs[0]),
         swatchColor: vs[0]?.color ?? null,
       };
     }),
@@ -168,7 +176,7 @@ export async function searchProducts(query: string, limit?: number) {
     const row = toProduct(p, vs);
     return {
       ...row,
-      cover: row.images[0] ?? vs[0]?.imageUrl ?? null,
+      ...productCardImages(p.images ?? [], vs[0]),
       swatchColor: vs[0]?.color ?? null,
     };
   });
@@ -188,7 +196,11 @@ export async function getProductBySlug(slug: string) {
     filter: `product="${product.id}"`,
     sort: "color",
   });
-  return toProduct(product, variants, product.expand?.category as PBCategory | undefined);
+  let category = product.expand?.category as PBCategory | undefined;
+  if (category?.slug === "huipiles") {
+    category = { ...category, name: "Vestidos", slug: "vestidos" };
+  }
+  return toProduct(product, variants, category);
 }
 
 export async function getRelatedProducts(productId: string, categoryId: string) {
@@ -214,8 +226,7 @@ export async function getRelatedProducts(productId: string, categoryId: string) 
     const row = toProduct(p, vs);
     return {
       ...row,
-      cover: row.images[0] ?? vs[0]?.imageUrl ?? null,
-      hoverImage: row.images[1] ?? vs[0]?.imageUrl ?? null,
+      ...productCardImages(p.images ?? [], vs[0]),
       swatchColor: vs[0]?.color ?? null,
     };
   };
